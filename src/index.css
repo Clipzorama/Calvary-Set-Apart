@@ -1,1 +1,49 @@
+
+/* font-family: 'Poppins', sans-serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: "Quintessential", serif; */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quintessential&display=swap');
+
 @import "tailwindcss";
+
+
+@theme {
+
+    --font-poppins: Poppins, sans-serif;
+    --font-quint: Quintessential, serif;
+    --color-primary: var(hsl(--primary));
+    --color-button: var(hsl(--button));
+
+}
+
+
+@layer base {
+    :root {
+        --primary: 225, 15%, 5%;
+        --button: 231, 16%, 52%;
+    }
+}
+
+@layer utilities {
+    .container {
+        margin-inline: auto;
+        padding-inline: 2rem;
+
+        @media (width >= 640px) {
+            max-width: 640px;
+        }
+        @media (width >= 768px) {
+            max-width: 768px;
+        }
+        @media (width >= 1024px) {
+            max-width: 1024px;
+        }
+        @media (width >= 1280px) {
+            max-width: 1280px;
+        }
+        @media (width >= 1400px) {
+            max-width: 1400px;
+        }
+    }
+}
