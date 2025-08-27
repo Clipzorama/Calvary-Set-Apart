@@ -14,6 +14,7 @@
     --font-quint: Quintessential, serif;
     --color-primary: var(hsl(--primary));
     --color-button: var(hsl(--button));
+    --color-background: var(hsl(--background));
 
 }
 
@@ -22,6 +23,7 @@
     :root {
         --primary: 225, 15%, 5%;
         --button: 231, 16%, 52%;
+        --background: 52, 90%, 97%;
     }
 }
 
