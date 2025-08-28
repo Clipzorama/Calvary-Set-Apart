@@ -38,7 +38,7 @@ export const NavBar = () => {
                     <NavLink to="/get-involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Get Involved
                     </NavLink>
-                    <NavLink to="/get-involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
+                    <NavLink to="/explore" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Explore
                     </NavLink>
 
