@@ -5,10 +5,10 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import CLogo from "@/assets/logo.webp";
 
 const services = [
-  { label: "Worship Times", to: "/services#worship" },
-  { label: "Community Events", to: "/services#events" },
-  { label: "Youth Programs", to: "/services#youth" },
-  { label: "Prayer Requests", to: "/services#prayer" },
+  { label: "Worship Times", to: "/explore#worship" },
+  { label: "Community Events", to: "/explore#events" },
+  { label: "Youth Programs", to: "/explore#youth" },
+  { label: "Prayer Requests", to: "/explore#prayer" },
 ];
 
 export const NavBar = () => {
@@ -19,7 +19,7 @@ export const NavBar = () => {
     const active = "font-semibold underline underline-offset-4";
 
     return (
-        <nav className="fixed inset-x-0 top-0 bg-background/20 backdrop-blur-md z-[100] font-poppins">
+        <nav className="fixed inset-x-0 top-0 bg-background/20 backdrop-blur-md z-[100] font-poppins border-b">
             <div className="container flex items-center justify-between py-6">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2">
@@ -37,6 +37,9 @@ export const NavBar = () => {
                     </NavLink>
                     <NavLink to="/get-involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Get Involved
+                    </NavLink>
+                    <NavLink to="/get-involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
+                        Explore
                     </NavLink>
 
                     {/* Services Nav */}
@@ -73,7 +76,7 @@ export const NavBar = () => {
             {/* Mobile menu (slide-down) */}
             {menuOpen && (
                 <div className="md:hidden border-t bg-background/95 backdrop-blur">
-                    <div className="container py-3 flex flex-col">
+                    <div className="container py-6 flex flex-col">
                         <NavLink to="/" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Home Page
                         </NavLink>
@@ -83,6 +86,10 @@ export const NavBar = () => {
                         <NavLink to="/get-involved" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Get Involved
                         </NavLink>
+                        <NavLink to="/explore" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
+                            Explore
+                        </NavLink>
+                        
 
                         {/* Collapsible services on mobile */}
                         <button className="mt-1 px-2 py-2 rounded-md inline-flex items-center justify-between" onClick={() => setServiceOpen((v) => !v)}>
@@ -103,7 +110,7 @@ export const NavBar = () => {
                         </div>
                         )}
 
-                        <Link to="/#contact" onClick={() => setMenuOpen(false)} className="mt-3 w-full text-center bg-button px-4 py-2 border rounded-md text-sm hover:bg-foreground/5">
+                        <Link to="/#contact" onClick={() => setMenuOpen(false)} className="mt-3 w-full text-center text-white bg-button px-4 py-2 border-none rounded-md text-sm hover:bg-foreground/5">
                             Join
                         </Link>
                     </div>
