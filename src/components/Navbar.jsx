@@ -20,7 +20,7 @@ export const NavBar = () => {
 
     return (
         <nav className="fixed inset-x-0 top-0 bg-background/20 backdrop-blur-md z-[100] font-poppins">
-            <div className="container flex items-center justify-between py-4">
+            <div className="container flex items-center justify-between py-6">
                 {/* Logo */}
                 <Link to="/" className="flex items-center gap-2">
                     <img src={CLogo} alt="Church Logo" className="w-8 h-10" />
@@ -57,11 +57,11 @@ export const NavBar = () => {
                     </div>
                 </div>
 
-                {/* Desktop CTA */}
+                {/* Desktop Button */}
                 <div className="hidden md:block">
-                    <a href="#contact" className="px-4 py-2 bg-button text-white border rounded-md text-sm hover:bg-buttonh transition-colors duration-300">
+                    <Link to="/#contact" className="px-4 py-2 bg-button text-white border rounded-md text-sm hover:bg-buttonh transition-colors duration-300">
                         Join
-                    </a>
+                    </Link>
                 </div>
 
                 {/* Mobile menu button toggled on mobile */}
@@ -103,9 +103,9 @@ export const NavBar = () => {
                         </div>
                         )}
 
-                        <a href="#contact" onClick={() => setMenuOpen(false)} className="mt-3 w-full text-center bg-button px-4 py-2 border rounded-md text-sm hover:bg-foreground/5">
+                        <Link to="/#contact" onClick={() => setMenuOpen(false)} className="mt-3 w-full text-center bg-button px-4 py-2 border rounded-md text-sm hover:bg-foreground/5">
                             Join
-                        </a>
+                        </Link>
                     </div>
                 </div>
             )}
