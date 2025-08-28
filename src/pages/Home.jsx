@@ -1,5 +1,6 @@
 
 import { HeroPage } from "@/homeparts/Hero";
+import { Glance } from "@/homeparts/Glance"
 import Particles from "@/Effects/Particles";
 
 
@@ -7,7 +8,7 @@ function Home() {
     return (
         <div className="min-h-screen bg-background overflow-x-hidden">
             <Particles
-              particleColors={['#000000', '#000000']}
+              particleColors={['#717798', '#717798']}
               particleCount={90}
               particleSpread={10}
               speed={0.1}
@@ -17,6 +18,7 @@ function Home() {
               disableRotation={false}
             />
             <HeroPage />
+            <Glance />
         </div>
     )
 
