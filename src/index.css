@@ -12,9 +12,11 @@
 
     --font-poppins: Poppins, sans-serif;
     --font-quint: Quintessential, serif;
-    --color-primary: var(hsl(--primary));
-    --color-button: var(hsl(--button));
-    --color-background: var(hsl(--background));
+    --color-primary: hsl(var(--primary));
+    --color-foreground: hsl(var(--foreground));
+    --color-button: hsl(var(--button));
+    --color-buttonh: hsl(var(--buttonh));
+    --color-background: hsl(var(--background));
 
 }
 
@@ -23,7 +25,9 @@
     :root {
         --primary: 225, 15%, 5%;
         --button: 231, 16%, 52%;
-        --background: 52, 90%, 97%;
+        --buttonh: 231, 16%, 48%;
+        --background: 45, 29%, 97%;
+        --foreground: 230, 19%, 20%;
     }
 }
 
