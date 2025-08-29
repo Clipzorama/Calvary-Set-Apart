@@ -1,10 +1,10 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import Home from "@/pages/Home";
-import About from "@/pages/About";
-import GetInvolved from "@/pages/GetInvolved";
-import Explore from "@/pages/Explore";
-import NotFound from "@/pages/NotFound";
+import { About } from "@/pages/About";
+import { GetInvolved } from "@/pages/GetInvolved";
+import { Explore } from "@/pages/Explore";
+import { NotFound } from "@/pages/NotFound";
 import { NavBar } from "@/components/Navbar"
 
 

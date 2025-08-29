@@ -1,6 +1,9 @@
 
-function GetInvolved() { 
-    <h1 className="text-primary">This is a GetInvolved page</h1>
+export const GetInvolved = () => { 
+    return (
+        <h1 className="text-primary">This is a get involved page</h1>
+
+    );
 
 }
 
