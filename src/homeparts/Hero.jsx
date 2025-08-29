@@ -24,30 +24,22 @@ export const HeroPage = () => {
             </div>
 
            <div className="container mt-6">
-  <div
-    className="
-      relative mx-auto w-full
-      max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl
-      h-[240px] sm:h-[300px] md:h-[420px] lg:h-[440px]
-      overflow-hidden rounded-2xl opacity-0 animate-fade-in-delay-4
-    "
-  >
-    <img
-      src={heroImg}
-      alt="Congregation of Calvary Set Apart Deliverance Ministry in front of the church"
-      loading="lazy"
-      className="absolute inset-0 h-full w-full object-contain"
-    />
-  </div>
-</div>
-
-
-
+                <div
+                    className=" relative mx-auto w-full max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[240px] sm:h-[300px] md:h-[420px] lg:h-[440px] overflow-hidden rounded-2xl opacity-0 animate-fade-in-delay-4">
+                <img
+                    src={heroImg}
+                    alt="Congregation of Calvary Set Apart Deliverance Ministry in front of the church"
+                    loading="lazy"
+                    className="absolute inset-0 h-full w-full object-contain"
+                />
+                </div>
+            </div>
 
             <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in-delay-5">
                 <span className="animate-bounce">Scroll Down</span>
                 <ArrowDown className="h-5 w-5 text-button animate-bounce" />
             </div>
+            
         </section>
     )
 }
