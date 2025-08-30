@@ -1,4 +1,6 @@
 import { Sun, BookOpen, HeartHandshake } from "lucide-react";
+import { Link } from "react-router-dom";
+
 
 
 const pointers = [
@@ -31,7 +33,7 @@ export const Pillars = () => {
                     At our church, we are committed to nurturing a vibrant community through worship, teaching, and outreach. These pillars guide our mission and strengthen our faith.    
                 </p>
 
-                <div className="flex flex-col lg:flex-row gap-12 text-center">
+                <div className="flex flex-col lg:flex-row gap-12 text-center mb-20">
                     {pointers.map((item, index) => (
                         <div key={index} className="flex flex-col items-center px-6 gap-3">
                             {item.icon}
@@ -39,7 +41,11 @@ export const Pillars = () => {
                             <p className="text-muted-foreground">{item.text}</p>
                         </div>
                     ))}
-                    </div>
+                </div>
+
+                <Link to="/get-involved" className="inline-block cursor-pointer border rounded-xl px-4 py-2 font-poppins font-medium bg-transparent hover:scale-150 text-primary transition-all duration-300">
+                    Join us
+                </Link>
 
             </div>
 
