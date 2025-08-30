@@ -23,7 +23,7 @@ export const Glance = () => {
 
     return (
       <section id="glance" className="py-16 md:py-20 lg:py-60">
-        <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-95">
+        <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-85">
           <div className="grid gap-10 md:gap-14 lg:grid-cols-2 items-center">
             {/* Left Side */}
             <div className="space-y-6 ">
