@@ -9,21 +9,21 @@ export const Glance = () => {
         title: "Sunday Worship",
         text: "Join us for uplifting worship and transformative teaching every Sunday at 12:00 PM.",
         to: "/services#worship",
-        segue: "Join Worship →",
+        segue: "Worship →",
       },
       {
         icon: <Users className="h-9 w-9" aria-hidden="true" />,
         title: "Youth Development",
         text: "Engage in our youth programs that inspire faith and foster lifelong friendships.",
         to: "/explore#youth",
-        segue: "Join Youth →",
+        segue: "Youth →",
 
       },
     ];
 
     return (
       <section id="glance" className="py-16 md:py-20 lg:py-60">
-        <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-65">
+        <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-95">
           <div className="grid gap-10 md:gap-14 lg:grid-cols-2 items-center">
             {/* Left Side */}
             <div className="space-y-6 ">
