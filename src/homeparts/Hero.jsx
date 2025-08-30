@@ -18,7 +18,7 @@ export const HeroPage = () => {
 
                 <div className="mt-6 opacity-0 animate-fade-in-delay-3">
                     <a href="/about" className="inline-block cursor-pointer rounded-xl px-6 py-3 font-poppins font-medium bg-button hover:bg-buttonh text-white transition-colors duration 300">
-                        Learn More
+                        Our Mission
                     </a>
                 </div>
             </div>
