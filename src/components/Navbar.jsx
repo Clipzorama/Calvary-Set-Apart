@@ -46,7 +46,7 @@ export const NavBar = () => {
                     <div className="relative group">
                         <button
                             className={`${baseLink} inline-flex items-center gap-1`}>
-                            Our Services <ChevronDown size={16} />
+                            Offerings <ChevronDown size={16} />
                         </button>
                         {/* DropDown */}
                         <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition
