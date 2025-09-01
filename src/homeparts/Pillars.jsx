@@ -33,7 +33,7 @@ export const Pillars = () => {
                     At our church, we are committed to nurturing a vibrant community through worship, teaching, and outreach. These pillars guide our mission and strengthen our faith.    
                 </p>
 
-                <div className="flex flex-col lg:flex-row gap-12 text-center mb-20">
+                <div className="flex flex-col lg:flex-row gap-12 text-center mb-17">
                     {pointers.map((item, index) => (
                         <div key={index} className="flex flex-col items-center px-6 gap-3">
                             {item.icon}
