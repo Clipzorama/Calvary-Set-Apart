@@ -1,5 +1,5 @@
 // NavBar.jsx
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 import CLogo from "@/assets/logo.webp";
@@ -14,9 +14,25 @@ const services = [
 export const NavBar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
     const [serviceOpen, setServiceOpen] = useState(false);
+    const [deskMenu, setDeskMenu] = useState(false);
+    const dropdownRef = useRef(null);
 
     const baseLink = "px-3 py-2 rounded-md text-sm transition-colors hover:opacity-80";
     const active = "font-semibold underline underline-offset-4";
+
+    // Close dropdown on outside click
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+        if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
+            setDeskMenu(false);
+        }
+        };
+
+        document.addEventListener("mousedown", handleClickOutside);
+        return () => {
+            document.removeEventListener("mousedown", handleClickOutside);
+        };
+    }, []);
 
     return (
         <nav className="fixed inset-x-0 top-0 bg-background/20 backdrop-blur-md z-[100] font-poppins border-b">
@@ -43,26 +59,28 @@ export const NavBar = () => {
                     </NavLink>
 
                     {/* Services Nav */}
-                    <div className="relative group">
+                    <div ref={dropdownRef} className="relative inline-block">
                         <button
-                            className={`${baseLink} inline-flex items-center gap-1`}>
+                            className={`${baseLink} inline-flex items-center gap-1 cursor-pointer`} onClick={() => setDeskMenu((prev) => !prev)}>
                             Services <ChevronDown size={16} />
                         </button>
                         {/* DropDown */}
-                        <div className="invisible opacity-0 group-hover:visible group-hover:opacity-100 transition
+                        {deskMenu && (
+                            <div className="opacity-100 transition
                                         absolute left-0 mt-2 w-56 rounded-xl border bg-background/95 backdrop-blur p-2 shadow-lg">
-                            {services.map((s) => (
-                                <Link key={s.to} to={s.to} className="block rounded-lg px-3 py-2 text-sm hover:bg-foreground/5">
-                                    {s.label}
-                                </Link>
-                            ))}
+                                {services.map((s) => (
+                                    <Link key={s.to} to={s.to} onClick={() => setDeskMenu((prev) => !prev)} className="block rounded-lg px-3 py-2 text-sm hover:bg-foreground/5">
+                                        {s.label}
+                                    </Link>
+                                ))}
                         </div>
+                        )}
                     </div>
                 </div>
 
                 {/* Desktop Button */}
                 <div className="hidden md:block">
-                    <Link to="/#contact" className="px-4 py-2 bg-button text-white border rounded-md text-sm hover:bg-buttonh transition-colors duration-300">
+                    <Link to="/#contact" className="px-4 py-2 bg-button text-white border-none rounded-md text-sm hover:bg-buttonh transition-colors duration-300">
                         Join
                     </Link>
                 </div>
