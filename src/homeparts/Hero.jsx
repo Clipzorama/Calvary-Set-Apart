@@ -5,7 +5,7 @@ export const HeroPage = () => {
 
 
     return (
-        <section id="hero" className="flex flex-col items-center justify-center w-full px-4 pb-30 relative min-h-screen pt-35 md:pt-50">
+        <section id="hero" className="flex flex-col items-center justify-center w-full px-4 pb-30 relative min-h-screen pt-35 md:pt-35">
             <div className="mx-auto text-center z-10 relative max-w-5xl">
                 <h1 className="font-quint font-semibold text-3xl md:text-4xl xl:text-5xl leading-tight md:leading-normal tracking-normal text-primary mb-6 opacity-0 animate-fade-in-delay-1">
                     Welcome to Calvary Set Apart <br /> Deliverance Ministry
