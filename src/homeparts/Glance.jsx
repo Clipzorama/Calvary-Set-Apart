@@ -23,7 +23,7 @@ export const Glance = () => {
 
     return (
       <section id="glance" className="py-16 md:py-20 lg:py-60">
-        <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-85">
+        <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-45">
           <div className="grid gap-10 md:gap-14 lg:grid-cols-2 items-center">
             {/* Left Side */}
             <div className="space-y-6 ">
@@ -33,7 +33,6 @@ export const Glance = () => {
               <p className="font-poppins text-md text-center leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground max-w-3xl mx-auto ">
                 At Calvary Set Apart Deliverance Ministry, we are committed to fostering a vibrant community rooted in Christ. 
                 Our mission encompasses worship, teaching, deliverance, youth development, and impactful outreach.
-
               </p>
 
               <div className="flex flex-col sm:flex-row gap-10 mb-8">
