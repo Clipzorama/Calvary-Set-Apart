@@ -10,6 +10,8 @@ export const FAQ = () => {
     { num: 3, q: "How do I become a member?", a: "To become a member, you must profess your faith in Jesus Christ and undergo baptism. Acceptance of our church covenant and teachings is also required. We offer a New Member Orientation to help you understand our faith and practices." },
     { num: 4, q: "What does your outreach include?", a: "Our outreach ministry includes a Shelter Program that serves those in need within our community. We also organize special events like the National Day of Prayer and youth activities such as choir and praise dance. We believe in serving others as a reflection of Christ's love." },
     { num: 5, q: "How can I get involved?", a: "You can get involved by attending our services, joining a ministry, or participating in community events. We encourage everyone to find their place within our church family. Reach out to us for more information on how you can contribute." },
+    { num: 6, q: "What are the rights of church members?", a: "Every member of Calvary Set Apart Deliverance Ministry has the right to vote in church elections and on questions presented to the congregation, provided they are present. Members are also eligible for church offices, may participate in ordinances, and are encouraged to take part in the ministry and fellowship of the church."},
+
   ];
 
   return (
@@ -26,12 +28,8 @@ export const FAQ = () => {
           {faqs.map(({ num, q, a }) => (
             <article
               key={num}
-              className="relative rounded-2xl border bg-background/90 backdrop-blur p-6 md:p-8 shadow-sm transition hover:shadow-lg"
-            >
-              {/* left accent */}
-              <span className="absolute inset-y-0 left-0 w-1 rounded-l-2xl bg-primary/70" aria-hidden />
-
-              {/* number badge */}
+              className="relative rounded-2xl border-t border-r border-b border-l-4 border-l-button bg-background/90 backdrop-blur p-6 md:p-8 shadow-sm transition hover:shadow-lg">
+              {/* number on the top right */}
               <span className="absolute right-4 top-4 inline-flex h-7 w-7 items-center justify-center rounded-full border text-xs font-bold font-poppins">
                 {num}
               </span>
@@ -39,12 +37,13 @@ export const FAQ = () => {
               <h3 className="pr-10 font-poppins text-lg md:text-xl font-semibold">
                 {q}
               </h3>
+
               <p className="mt-3 font-poppins text-sm leading-6 text-foreground/90">
                 {a}
               </p>
 
               {/* subtle underline on hover */}
-              <div className="mt-5 h-px w-full scale-x-0 bg-foreground/20 transition group-hover:scale-x-100" />
+              <div className="mt-5 h-px w-full scale-x-0 bg-foreground/20" />
             </article>
           ))}
         </div>
