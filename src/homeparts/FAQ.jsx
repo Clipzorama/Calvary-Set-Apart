@@ -51,7 +51,7 @@ export const FAQ = () => {
         </div>
         <div className="flex flex-col items-center gap-4">
             <h1 className="font-poppins font-bold text-xl">Still have Questions?</h1>
-            <p className="font-poppins text-center text-sm leading-6 text-foreground/90">Concerning our ministry, faith, or upcoming events, we’re here to help guide you. Don’t hesitate to get in touch.</p>
+            <p className="font-poppins text-center text-sm leading-6 text-foreground/90">Concerning our ministry, faith, or upcoming events, we're here to help guide you. Don't hesitate to get in touch.</p>
             <button to="/#contact" className="px-4 py-2 bg-button text-white border-none rounded-md text-sm hover:bg-buttonh transition-colors duration-300 cursor-pointer">
                 Contact
             </button>
