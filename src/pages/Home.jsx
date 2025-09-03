@@ -3,6 +3,7 @@ import { HeroPage } from "@/homeparts/Hero";
 import { Glance } from "@/homeparts/Glance"
 import { Pillars } from "@/homeparts/Pillars"
 import { FAQ } from "@/homeparts/FAQ"
+import { Member } from "@/homeparts/Member"
 import Particles from "@/Effects/Particles";
 
 
@@ -23,6 +24,7 @@ function Home() {
             <Glance />
             <Pillars />
             <FAQ />
+            <Member />
         </div>
     )
 

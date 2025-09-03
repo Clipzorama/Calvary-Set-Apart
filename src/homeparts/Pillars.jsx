@@ -44,7 +44,7 @@ export const Pillars = () => {
                 </div>
 
                 <Link to="/get-involved" className="inline-block cursor-pointer border rounded-xl px-4 py-2 font-poppins font-medium bg-transparent hover:scale-150 text-primary transition-all duration-300">
-                    Join us
+                    Serve With Us
                 </Link>
 
             </div>
