@@ -4,6 +4,7 @@
 
 
 export const FAQ = () => {
+
   const faqs = [
     { num: 1, q: "What are service times?", a: "Our Sunday School starts at 10:30 AM, followed by the Worship Service at 12:00 PM. We also have prayer meetings on Monday at 8:00 PM in person and Tuesday at 8:00 PM via Zoom. Join us for Bible study on Thursdays at 8:00 PM on Zoom." },
     { num: 2, q: "What are your beliefs?", a: "We believe in the Holy Trinity: God the Father, Jesus Christ the Son, and the Holy Spirit. Our faith is rooted in the teachings of the Bible, emphasizing grace, forgiveness, and the hope of eternal life. We strive to live according to God's Word and share the Gospel with others." },
@@ -24,7 +25,8 @@ export const FAQ = () => {
           Find answers to common questions about our services, beliefs, and how to become a member.
         </p>
 
-        <div className="mt-10 grid gap-5 md:gap-7 lg:grid-cols-2">
+        {/* FAQ container */}
+        <div className="mt-10 grid gap-5 md:gap-7 lg:grid-cols-2 mb-12">
           {faqs.map(({ num, q, a }) => (
             <article
               key={num}
@@ -47,6 +49,14 @@ export const FAQ = () => {
             </article>
           ))}
         </div>
+        <div className="flex flex-col items-center gap-4">
+            <h1 className="font-poppins font-bold text-xl">Still have Questions?</h1>
+            <p className="font-poppins text-center text-sm leading-6 text-foreground/90">Concerning our ministry, faith, or upcoming events, we’re here to help guide you. Don’t hesitate to get in touch.</p>
+            <button to="/#contact" className="px-4 py-2 bg-button text-white border-none rounded-md text-sm hover:bg-buttonh transition-colors duration-300 cursor-pointer">
+                Contact
+            </button>
+        </div>
+        
       </div>
     </section>
   );

@@ -30,7 +30,7 @@ export const Glance = () => {
               <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold text-center font-quint tracking-normal leading-normal">
                 A Community Set Apart for Christ
               </h2>
-              <p className="font-poppins text-md text-center leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground max-w-3xl mx-auto ">
+              <p className="font-poppins text-md text-center leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground/90 max-w-3xl mx-auto ">
                 At Calvary Set Apart Deliverance Ministry, we are committed to fostering a vibrant community rooted in Christ. 
                 Our mission encompasses worship, teaching, deliverance, youth development, and impactful outreach.
               </p>
@@ -41,7 +41,7 @@ export const Glance = () => {
                     <div className="p-2">{it.icon}</div>
                     <div>
                       <h3 className="font-bold mb-2 font-poppins text-lg">{it.title}</h3>
-                      <p className="text-sm text-muted-foreground mb-4 font-poppins text-justify">{it.text}</p>
+                      <p className="mb-4 text-justify font-poppins text-sm leading-6 text-foreground/90">{it.text}</p>
                       <Link
                         to={it.to}
                         className="inline-block cursor-pointer rounded-xl px-4 py-2 font-poppins font-medium bg-button hover:bg-buttonh text-white transition-colors duration-300">

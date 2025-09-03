@@ -29,7 +29,7 @@ export const Pillars = () => {
                 <h1 className="font-quint font-semibold text-3xl md:text-4xl xl:text-5xl leading-tight md:leading-normal tracking-normal text-primary mb-6 text-center">
                     Building Blocks of Our Ministry
                 </h1>
-                <p className="font-poppins leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground max-w-3xl text-center mb-10">
+                <p className="font-poppins leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground/90 max-w-3xl text-center mb-10">
                     At our church, we are committed to nurturing a vibrant community through worship, teaching, and outreach. These pillars guide our mission and strengthen our faith.    
                 </p>
 
@@ -38,7 +38,7 @@ export const Pillars = () => {
                         <div key={index} className="flex flex-col items-center px-6 gap-3">
                             {item.icon}
                             <h3 className="text-xl font-bold">{item.title}</h3>
-                            <p className="text-muted-foreground">{item.text}</p>
+                            <p className="font-poppins text-sm leading-6 text-foreground/90">{item.text}</p>
                         </div>
                     ))}
                 </div>

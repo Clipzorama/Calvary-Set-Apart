@@ -11,7 +11,7 @@ export const HeroPage = () => {
                     Welcome to Calvary Set Apart <br /> Deliverance Ministry
                 </h1>
 
-                <p className="font-poppins leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground max-w-3xl mx-auto opacity-0 animate-fade-in-delay-2">
+                <p className="font-poppins leading-6 xs:text-xs sm:text-sm md:text-md xl:text-[1rem] text-foreground/90 max-w-3xl mx-auto opacity-0 animate-fade-in-delay-2">
                     Join us for uplifting worship and fellowship centered on Jesus Christ.
                     Our services include Sunday School at 10:30 AM and Worship Service at 12:00 PM.
                 </p>
