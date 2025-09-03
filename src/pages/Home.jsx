@@ -1,10 +1,13 @@
 
-import { HeroPage } from "@/homeparts/Hero";
+import { HeroPage } from "@/homeparts/Hero"
 import { Glance } from "@/homeparts/Glance"
 import { Pillars } from "@/homeparts/Pillars"
 import { FAQ } from "@/homeparts/FAQ"
 import { Member } from "@/homeparts/Member"
-import Particles from "@/Effects/Particles";
+import Particles from "@/Effects/Particles"
+import { Contact } from "@/homeparts/Contact"
+import { Footer } from "@/components/Footer"
+
 
 
 function Home() {
@@ -25,6 +28,8 @@ function Home() {
             <Pillars />
             <FAQ />
             <Member />
+            <Contact />
+            <Footer />
         </div>
     )
 

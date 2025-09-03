@@ -46,10 +46,10 @@ export const NavBar = () => {
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">
                     <NavLink to="/" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
-                        Home Page
+                        Home
                     </NavLink>
                     <NavLink to="/about" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
-                        About Us
+                        About
                     </NavLink>
                     <NavLink to="/get-involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Get Involved
@@ -96,10 +96,10 @@ export const NavBar = () => {
                 <div className="md:hidden border-t bg-background/95 backdrop-blur">
                     <div className="container py-6 flex flex-col">
                         <NavLink to="/" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
-                            Home Page
+                            Home
                         </NavLink>
                         <NavLink to="/about" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
-                            About Us
+                            About
                         </NavLink>
                         <NavLink to="/get-involved" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Get Involved

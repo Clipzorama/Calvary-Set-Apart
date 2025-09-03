@@ -1,0 +1,46 @@
+import { Mail, Phone, MapPin } from "lucide-react";
+import logoPng from "@/assets/logo.webp";
+import { Link } from "react-router-dom";
+
+
+export const Footer = () => {
+  const year = new Date().getFullYear();
+
+  return (
+    <footer className="mt-12 border-t bg-background brightness-80 relative z-100">
+      <div className="container mx-auto px-4 py-10">
+        <div className="grid gap-8 md:grid-cols-2 items-start">
+          <div className="space-y-3 relative md:bottom-3">
+            <img
+              src={logoPng}
+              alt="Nature Cures Naturally — logo"
+              className="h-10 w-auto drop-shadow-sm"
+            />
+            <p className="text-sm text-muted-foreground">
+              &copy; {year} Calvary Set Apart Deliverance Ministry, All rights reserved.
+            </p>
+            <p className="text-sm text-muted-foreground">
+              Made from Clipzorama.
+            </p>
+          </div>
+
+          <nav className="grid grid-cols-2 gap-2 text-sm">
+            <Link to="/" className="text-primary">Home</Link>
+            <Link to="/about" className="text-primary">About</Link>
+            <Link to="/get-involved" className="text-primary">Get Involved</Link>
+            <Link to="/explore" className="text-primary">Explore</Link>
+          </nav>
+
+          <div className="space-y-4 text-sm flex flex-col">
+            <a href="mailto:hello@naturecuresnaturally.com" className="inline-flex items-center gap-2 hover:text-primary transition-colors">
+              <Mail size={16} /> TrueVineDm@gmail.com
+            </a>
+            <p className="inline-flex items-center gap-2 text-muted-foreground">
+              <MapPin size={16} /> Prospect, CT 06712
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
