@@ -102,7 +102,7 @@ export const Contact = () => {
                                         type="email"
                                         id="email"
                                         name="email"
-                                        placeholder="your@email.com"
+                                        placeholder="you@email.com"
                                         required
                                         className="w-full px-3 py-2 md:px-6 md:py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
                                 </div>
