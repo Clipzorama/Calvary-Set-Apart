@@ -62,7 +62,10 @@ export const Contact = () => {
             {/* Overlay + Modal */}
             {isOpen && (
                 <div className="fixed inset-0 bg-black/70 backdrop-blur-sm flex justify-center items-center z-100">
-                    <div className="relative bg-background border border-primary rounded-2xl p-7 w-[95%] sm:w-[600px] shadow-xl">
+                    <div className="relative bg-background border border-primary rounded-2xl p-6 
+                w-[95%] sm:max-w-[600px] shadow-xl 
+                max-h-[90vh] overflow-y-auto">
+
                         <button
                         onClick={() => setIsOpen(false)}
                         className="absolute top-4 right-4 text-primary hover:text-primary/70">
@@ -71,10 +74,10 @@ export const Contact = () => {
 
                         <form onSubmit={handleSubmit}>
                             <h2 className="text-3xl text-header mb-4 font-extrabold text-center">
-                                Start A Conversation
+                                Share Your Heart With Us ❤️
                             </h2>
                             <p className="text-foreground opacity-80 text-center text-lg mb-8">
-                                Fill out the form below and I'll get back to you soon!
+                                We'd love to hear from you! Whether you have a prayer request, a question about our ministry, or simply want to share your story, our hearts are open and ready to connect.
                             </p>
 
                             {/* Inputs */}
@@ -86,6 +89,7 @@ export const Contact = () => {
                                     <input
                                         type="text"
                                         id="name"
+                                        name="name"
                                         placeholder="Your Name..."
                                         required
                                         className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
@@ -97,6 +101,7 @@ export const Contact = () => {
                                     <input
                                         type="email"
                                         id="email"
+                                        name="email"
                                         placeholder="your@email.com"
                                         required
                                         className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
@@ -110,6 +115,7 @@ export const Contact = () => {
                                 <input
                                 type="text"
                                 id="subject"
+                                name="subject"
                                 placeholder="Subject"
                                 required
                                 className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
@@ -119,13 +125,13 @@ export const Contact = () => {
                                 <label htmlFor="message" className="text-sm font-bold text-primary mb-2 block">
                                     Message
                                 </label>
-                                <textarea id="message" placeholder="Your Message..." required className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
+                                <textarea id="message" name="message" placeholder="Your Message..." required className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
                             </div>
 
                             <button
                                 type="submit"
                                 disabled={inSubmission}
-                                className="bg-button px-4 py-6 w-[80%] md:w-[60%] flex items-center justify-center gap-2 cursor-pointer mx-auto rounded-2xl hover:bg-buttonh hover:text-background transition-colors duration-300 font-bold text-lg"
+                                className="bg-button px-4 py-6 w-[80%] md:w-[60%] text-background flex items-center justify-center gap-2 cursor-pointer mx-auto rounded-2xl hover:bg-buttonh hover:text-background transition-colors duration-300 font-bold text-lg"
                             >
                                 {inSubmission ? "Sending..." : "Send Message"}
                                 <Send size={16} />
