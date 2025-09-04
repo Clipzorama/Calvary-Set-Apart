@@ -46,6 +46,10 @@
     }
 }
 
+html {
+        @apply scroll-smooth;
+    }
+
 @layer utilities {
 
     @keyframes fade-in {
@@ -78,4 +82,25 @@
             max-width: 1400px;
         }
     }
+}
+
+/* Styling the entire scrollbar */
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+/* Styling the scrollbar track */
+::-webkit-scrollbar-track {
+  @apply bg-background;
+}
+
+/* Styling the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  @apply bg-button;
+  /* border-radius: 5px; */
+}
+
+/* Styling the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-buttonh
 }
