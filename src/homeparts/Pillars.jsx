@@ -24,7 +24,7 @@ const pointers = [
 
 export const Pillars = () => {
     return (
-        <section id="pillars" className="py-16 md:py-20 lg:py-60">
+        <section id="pillars" className="py-16 md:py-20 lg:py-30">
             <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-50 flex flex-col items-center ">
                 <h1 className="font-quint font-semibold text-3xl md:text-4xl xl:text-5xl leading-tight md:leading-normal tracking-normal text-primary mb-6 text-center">
                     Building Blocks of Our Ministry

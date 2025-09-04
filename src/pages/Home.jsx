@@ -6,7 +6,6 @@ import { FAQ } from "@/homeparts/FAQ"
 import { Member } from "@/homeparts/Member"
 import Particles from "@/Effects/Particles"
 import { Contact } from "@/homeparts/Contact"
-import { Footer } from "@/components/Footer"
 
 
 
@@ -29,7 +28,6 @@ function Home() {
             <FAQ />
             <Member />
             <Contact />
-            <Footer />
         </div>
     )
 
