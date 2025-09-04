@@ -5,10 +5,10 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import CLogo from "@/assets/logo.webp";
 
 const services = [
-  { label: "Worship Times", to: "/explore#worship" },
-  { label: "Community Events", to: "/explore#events" },
-  { label: "Youth Programs", to: "/explore#youth" },
-  { label: "Prayer Requests", to: "/explore#prayer" },
+  { label: "- Worship Times", to: "/explore#worship" },
+  { label: "- Community Events", to: "/explore#events" },
+  { label: "- Youth Programs", to: "/explore#youth" },
+  { label: "- Prayer Requests", to: "/explore#prayer" },
 ];
 
 export const NavBar = () => {
