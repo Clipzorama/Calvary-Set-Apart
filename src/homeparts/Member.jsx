@@ -51,9 +51,9 @@ export const Member = () => {
 
 
     return (
-        <section id="members" className="py-16 md:py-24 lg:py-[7.5rem]">
-            <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
-                <h2 className="text-center font-quint text-3xl md:text-4xl xl:text-5xl font-semibold tracking-normal leading-tight">
+        <section id="members" className="py-16 md:py-24 lg:py-30">
+            <div className="mx-auto w-full max-w-6xl px-6 sm:px-20 md:px-6 lg:px-12 2xl:px-8">
+                <h2 className="text-center font-quint text-3xl md:text-4xl lg:text-5xl font-semibold tracking-normal leading-tight">
                     Our Members!
                 </h2>
                 <p className="mx-auto mt-3 max-w-3xl text-center font-poppins text-sm sm:text-base text-foreground/80">
@@ -61,12 +61,12 @@ export const Member = () => {
                 </p>
 
                 {/* Members grid */}
-                <ul className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-2 lg:grid-cols-3">
+                <ul className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-2 lg:grid-cols-3 relative z-20">
                     {members.map((m) => (
                         <li key={m.id} className="h-full">
                         <article className="h-full rounded-2xl border bg-background p-6 shadow-sm transition-shadow hover:shadow-md">
                             {/* Image */}
-                            <div className="w-full overflow-hidden rounded-xl aspect-[3/4]">
+                            <div className="w-full overflow-hidden rounded-xl aspect-[5/6] md:aspect-[3/4] max-w-[320px] mx-auto">
                             <img
                                 src={m.img}
                                 alt={m.scriptureRef}
@@ -76,10 +76,10 @@ export const Member = () => {
 
                             {/* Scripture */}
                             <div className="mt-5 text-center">
-                            <p className="text-sm font-semibold tracking-wide uppercase text-foreground/70">
+                            <p className="text-sm font-semibold tracking-wide uppercase text-foreground/70 font-poppins">
                                 {m.scriptureRef}
                             </p>
-                            <p className="mt-2 text-[15px] leading-relaxed text-foreground/90">
+                            <p className="mt-2 text-[13px] md:text-[0.9rem] leading-relaxed text-foreground/90 font-poppins">
                                 {m.scriptureText}
                             </p>
                             </div>
