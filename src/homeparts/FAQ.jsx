@@ -30,7 +30,7 @@ export const FAQ = () => {
           {faqs.map(({ num, q, a }) => (
             <article
               key={num}
-              className="relative rounded-2xl border-t border-r border-b border-l-4 border-l-button bg-background/90 backdrop-blur p-6 md:p-8 shadow-sm transition hover:shadow-lg">
+              className="relative rounded-2xl border-t border-r border-b border-l-4 border-l-button bg-background/90 backdrop-blur p-6 md:p-8 transition-all duration-300 hover:shadow-lg">
               {/* number on the top right */}
               <span className="absolute right-4 top-4 inline-flex h-7 w-7 items-center justify-center rounded-full border text-xs font-bold font-poppins">
                 {num}
@@ -52,9 +52,9 @@ export const FAQ = () => {
         <div className="flex flex-col items-center gap-4">
             <h1 className="font-poppins font-bold text-xl md:text-2xl">Still have Questions?</h1>
             <p className="font-poppins text-center text-sm md:text-md leading-6 text-foreground/90">Concerning our ministry, faith, or upcoming events, we're here to help guide you. Don't hesitate to get in touch.</p>
-            <button to="/#contact" className="mt-4 px-4 py-2 bg-button font-poppins text-white border-none rounded-md text-sm md:text-md hover:bg-buttonh transition-colors duration-300 cursor-pointer">
+            <a href="#contact" className="mt-4 px-4 py-2 bg-button font-poppins text-white border-none rounded-md text-sm md:text-md hover:bg-buttonh transition-colors duration-300 cursor-pointer">
                 Contact
-            </button>
+            </a>
         </div>
         
       </div>
