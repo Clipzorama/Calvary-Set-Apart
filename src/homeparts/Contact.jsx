@@ -45,7 +45,7 @@ export const Contact = () => {
 
 
     return (
-        <section id="faq" className="py-16 md:py-24 lg:py-[7.5rem]">
+        <section id="contact" className="py-16 md:py-24 lg:py-[7.5rem]">
             <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem] flex flex-col items-center">
                 <h2 className="text-center font-quint text-3xl md:text-4xl xl:text-5xl font-semibold tracking-normal leading-tight">
                     Contact Us
@@ -73,10 +73,10 @@ export const Contact = () => {
                         </button>
 
                         <form onSubmit={handleSubmit}>
-                            <h2 className="text-3xl text-header mb-4 font-extrabold text-center">
+                            <h2 className="text-xl md:text-3xl text-header mb-4 font-extrabold text-center">
                                 Share Your Heart With Us ❤️
                             </h2>
-                            <p className="text-foreground opacity-80 text-center text-lg mb-8">
+                            <p className="text-foreground opacity-80 text-center text-md md:text-lg mb-8">
                                 We'd love to hear from you! Whether you have a prayer request, a question about our ministry, or simply want to share your story, our hearts are open and ready to connect.
                             </p>
 
@@ -92,7 +92,7 @@ export const Contact = () => {
                                         name="name"
                                         placeholder="Your Name..."
                                         required
-                                        className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
+                                        className="w-full px-3 py-2 md:px-6 md:py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
                                 </div>
                                 <div>
                                     <label htmlFor="email" className="text-sm font-bold text-primary mb-2 block">
@@ -104,7 +104,7 @@ export const Contact = () => {
                                         name="email"
                                         placeholder="your@email.com"
                                         required
-                                        className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
+                                        className="w-full px-3 py-2 md:px-6 md:py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
                                 </div>
                             </div>
 
@@ -118,20 +118,20 @@ export const Contact = () => {
                                 name="subject"
                                 placeholder="Subject"
                                 required
-                                className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
+                                className="w-full px-3 py-2 md:px-6 md:py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
                             </div>
 
                             <div className="mb-8">
                                 <label htmlFor="message" className="text-sm font-bold text-primary mb-2 block">
                                     Message
                                 </label>
-                                <textarea id="message" name="message" placeholder="Your Message..." required className="w-full px-6 py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
+                                <textarea id="message" name="message" placeholder="Your Message..." required className="w-full px-3 py-2 md:px-6 md:py-4 bg-background/70 border border-primary rounded-xl text-primary placeholder:text-primary/70"/>
                             </div>
 
                             <button
                                 type="submit"
                                 disabled={inSubmission}
-                                className="bg-button px-4 py-6 w-[80%] md:w-[60%] text-background flex items-center justify-center gap-2 cursor-pointer mx-auto rounded-2xl hover:bg-buttonh hover:text-background transition-colors duration-300 font-bold text-lg"
+                                className="bg-button px-3 py-4 md:px-4 md:py-6 w-[80%] md:w-[60%] text-background flex items-center justify-center gap-2 cursor-pointer mx-auto rounded-2xl hover:bg-buttonh hover:text-background transition-colors duration-300 font-bold text-lg"
                             >
                                 {inSubmission ? "Sending..." : "Send Message"}
                                 <Send size={16} />
