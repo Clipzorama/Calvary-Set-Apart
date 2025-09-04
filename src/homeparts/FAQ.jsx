@@ -16,7 +16,7 @@ export const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-16 md:py-24 lg:py-[7.5rem]">
+    <section id="faq" className="py-16 md:py-24 lg:py-30">
       <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
         <h2 className="text-center font-quint text-3xl md:text-4xl xl:text-5xl font-semibold tracking-normal leading-tight">
           FAQS
@@ -26,7 +26,7 @@ export const FAQ = () => {
         </p>
 
         {/* FAQ container */}
-        <div className="mt-10 grid gap-5 md:gap-7 lg:grid-cols-2 mb-12">
+        <div className="mt-10 grid gap-5 md:gap-7 lg:grid-cols-2 mb-20">
           {faqs.map(({ num, q, a }) => (
             <article
               key={num}
@@ -50,9 +50,9 @@ export const FAQ = () => {
           ))}
         </div>
         <div className="flex flex-col items-center gap-4">
-            <h1 className="font-poppins font-bold text-xl">Still have Questions?</h1>
-            <p className="font-poppins text-center text-sm leading-6 text-foreground/90">Concerning our ministry, faith, or upcoming events, we're here to help guide you. Don't hesitate to get in touch.</p>
-            <button to="/#contact" className="px-4 py-2 bg-button text-white border-none rounded-md text-sm hover:bg-buttonh transition-colors duration-300 cursor-pointer">
+            <h1 className="font-poppins font-bold text-xl md:text-2xl">Still have Questions?</h1>
+            <p className="font-poppins text-center text-sm md:text-md leading-6 text-foreground/90">Concerning our ministry, faith, or upcoming events, we're here to help guide you. Don't hesitate to get in touch.</p>
+            <button to="/#contact" className="mt-4 px-4 py-2 bg-button font-poppins text-white border-none rounded-md text-sm md:text-md hover:bg-buttonh transition-colors duration-300 cursor-pointer">
                 Contact
             </button>
         </div>
