@@ -7,6 +7,8 @@ import { Explore } from "@/pages/Explore";
 import { NotFound } from "@/pages/NotFound";
 import { NavBar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer"
+import { Toaster } from "@/popup/toaster"
+
 
 
 
@@ -22,6 +24,7 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       <Footer />
+      <Toaster />
     </BrowserRouter>
   );
 }
