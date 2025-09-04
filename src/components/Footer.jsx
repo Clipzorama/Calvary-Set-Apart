@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin } from "lucide-react";
+import { Mail, MapPin } from "lucide-react";
 import logoPng from "@/assets/logo.webp";
 import { Link } from "react-router-dom";
 
@@ -7,7 +7,7 @@ export const Footer = () => {
   const year = new Date().getFullYear();
 
   return (
-    <footer className="mt-12 border-t bg-background brightness-80 relative z-60">
+    <footer className="pt-6 border-t bg-background/90 brightness-80 relative z-60">
       <div className="container mx-auto px-4 py-10">
         <div className="grid gap-8 md:grid-cols-2 items-start">
           <div className="space-y-3 relative md:bottom-3">
@@ -32,7 +32,7 @@ export const Footer = () => {
           </nav>
 
           <div className="space-y-4 text-sm flex flex-col">
-            <a href="mailto:hello@naturecuresnaturally.com" className="inline-flex items-center font-poppins gap-2 hover:text-primary transition-colors font-poppins">
+            <a href="mailto:hello@naturecuresnaturally.com" className="inline-flex items-center gap-2 hover:text-primary transition-colors font-poppins">
               <Mail size={16} /> TrueVineDm@gmail.com
             </a>
             <p className="inline-flex items-center font-poppins gap-2 text-muted-foreground">
