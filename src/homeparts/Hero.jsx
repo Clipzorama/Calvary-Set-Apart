@@ -18,12 +18,11 @@ export const HeroPage = () => {
 
                 <div className="mt-6 opacity-0 animate-fade-in-delay-3">
                     <a href="/about" className="inline-block cursor-pointer rounded-xl px-6 py-3 font-poppins font-medium bg-button hover:bg-buttonh text-white transition-colors duration 300">
-                        Our Mission
+                        Learn More
                     </a>
                 </div>
             </div>
-
-           <div className="container mt-6">
+            <div className="container mt-6">
                 <div
                     className=" relative mx-auto w-full max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[240px] sm:h-[300px] md:h-[420px] lg:h-[440px] overflow-hidden rounded-2xl opacity-0 animate-fade-in-delay-4">
                 <img
@@ -39,7 +38,6 @@ export const HeroPage = () => {
                 <span className="animate-bounce">Scroll Down</span>
                 <ArrowDown className="h-5 w-5 text-button animate-bounce" />
             </div>
-            
         </section>
     )
 }
