@@ -1,8 +1,4 @@
 
-
-
-
-
 export const FAQ = () => {
 
   const faqs = [
