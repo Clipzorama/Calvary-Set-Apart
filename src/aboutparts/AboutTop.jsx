@@ -16,7 +16,7 @@ export const AboutTop = () => {
             <div className="mx-auto w-full max-w-6xl mt-16 md:mt-24 grid md:grid-cols-2 items-center gap-8 md:gap-12">
                 {/* Image on left (desktop), below text on mobile */}
                 <div className="order-2 md:order-1 container">
-                    <div className="w-full relative aspect-square bg-muted/40 overflow-hidden rounded-2xl opacity-0 animate-fade-in-delay-5">
+                    <div className="w-full relative aspect-square h-[200px] sm:h-[300px] md:h-[420px] lg:h-[440px] bg-muted/40 overflow-hidden rounded-2xl opacity-0 animate-fade-in-delay-5">
                         <img
                         src={ap}
                         alt="Church community"
