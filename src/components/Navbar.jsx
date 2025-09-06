@@ -128,7 +128,7 @@ export const NavBar = () => {
                         </div>
                         )}
 
-                        <Link to="/#contact" onClick={() => setMenuOpen(false)} className="mt-3 w-full text-center text-white bg-button px-4 py-2 border-none rounded-md text-sm hover:bg-foreground/5">
+                        <Link href="/#contact" onClick={() => setMenuOpen(false)} className="mt-3 w-full text-center text-white bg-button px-4 py-2 border-none rounded-md text-sm hover:bg-foreground/5">
                             Join
                         </Link>
                     </div>

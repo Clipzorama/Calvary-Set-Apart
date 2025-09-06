@@ -4,7 +4,7 @@ import national from "@/assets/national.webp"
 
 export const Who = () => {
     return (
-        <section id="who" className="w-full px-4 relative min-h-screen py-16 md:pt-20 md:pb-20 lg:pt-30 lg:pb-0">
+        <section id="who" className="w-full px-4 relative py-16 md:pt-20 md:pb-20 lg:pt-10 lg:pb-50">
             <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
                 <div className="flex flex-col md:flex-row md:items-start gap-10 md:gap-16">
                     {/* Left Side */}

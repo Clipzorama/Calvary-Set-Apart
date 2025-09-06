@@ -46,59 +46,58 @@ function FeatureCard({ title, desc, anim }) {
 
 export const Beliefs = () => {
   return (
-    <section id="beliefs" className="w-full bg-background px-4 pb-20">
-      <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
-        {/* Header */}
-        <div className="text-center">
-          <h2 className="font-quint text-3xl md:text-4xl xl:text-5xl font-semibold">
-            What We Believe — Core Beliefs
-          </h2>
-          <p className="mx-auto mt-4 max-w-2xl font-poppins text-sm sm:text-base text-foreground/80">
-            At Calvary Set Apart Deliverance Ministry, our beliefs are rooted in Scripture and
-            guide our faith and actions. We strive to embody these principles in our daily lives
-            and community.
-          </p>
+    <section id="beliefs" className="w-full bg-background px-4 pb-40">
+        <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
+        {/* Top Portion  */}
+            <div className="text-center">
+                <h2 className="font-quint text-3xl md:text-4xl xl:text-5xl font-semibold">
+                    What We Believe — Core Beliefs
+                </h2>
+                <p className="mx-auto mt-4 max-w-2xl font-poppins text-sm sm:text-base text-foreground/80">
+                    At Calvary Set Apart Deliverance Ministry, our beliefs are rooted in Scripture and
+                    guide our faith and actions. We strive to embody these principles in our daily lives
+                    and community.
+                </p>
+            </div>
+
+            {/* Mobile and Tablet Design for this*/}
+            <div className="mt-12 lg:hidden">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
+                    {FEATURES.map((f) => (
+                    <FeatureCard key={f.title} {...f} />
+                    ))}
+                </div>
+
+                <div className="mt-12">
+                    <img
+                    src={beliefsImg}
+                    alt="Core beliefs"
+                    className="w-full h-auto rounded-lg object-cover"
+                    />
+                </div>
+            </div>
+
+                {/* Desktop */}
+            <div className="mt-16 hidden lg:grid lg:grid-cols-3 lg:gap-30 items-start">
+                <div className="flex flex-col gap-16">
+                    <FeatureCard {...FEATURES[0]} />
+                    <FeatureCard {...FEATURES[2]} />
+                </div>
+
+                <div className="order-none self-center max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[200px] sm:h-[300px] md:h-[350px] xl:h-[400px]">
+                    <img
+                    src={beliefsImg}
+                    alt="Core beliefs"
+                    className="w-full h-auto rounded-lg object-cover"
+                    />
+                </div>
+
+                <div className="flex flex-col gap-16">
+                    <FeatureCard {...FEATURES[1]} />
+                    <FeatureCard {...FEATURES[3]} />
+                </div>
+            </div>
         </div>
-
-        {/* Mobile/Tablet Layout: stacked features, image below */}
-        <div className="mt-12 lg:hidden">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-12">
-            {FEATURES.map((f) => (
-              <FeatureCard key={f.title} {...f} />
-            ))}
-          </div>
-
-          {/* Big image under features */}
-          <div className="mt-12">
-            <img
-              src={beliefsImg}
-              alt="Core beliefs"
-              className="w-full h-auto rounded-lg object-cover"
-            />
-          </div>
-        </div>
-
-        {/* Desktop Layout: 2 features left + image center + 2 features right */}
-        <div className="mt-16 hidden lg:grid lg:grid-cols-3 lg:gap-12 items-start">
-          <div className="flex flex-col gap-16">
-            <FeatureCard {...FEATURES[0]} />
-            <FeatureCard {...FEATURES[2]} />
-          </div>
-
-          <div className="order-none">
-            <img
-              src={beliefsImg}
-              alt="Core beliefs"
-              className="w-full h-auto rounded-lg object-cover"
-            />
-          </div>
-
-          <div className="flex flex-col gap-16">
-            <FeatureCard {...FEATURES[1]} />
-            <FeatureCard {...FEATURES[3]} />
-          </div>
-        </div>
-      </div>
     </section>
   );
 };
