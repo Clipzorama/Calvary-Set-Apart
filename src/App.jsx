@@ -1,8 +1,9 @@
-// App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { NavBar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Toaster } from "@/popup/toaster";
+// Hash-Based Navigation
+import { ScrollToHashElement } from "@/lib/ScrollToHashElement"
 import * as React from "react";
 
 const Home = React.lazy(() => import('@/pages/Home'));
@@ -16,6 +17,7 @@ export default function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-background overflow-x-hidden">
         <NavBar />
+        <ScrollToHashElement />
         <React.Suspense fallback={null}>
           <Routes>
             <Route index element={<Home />} />
