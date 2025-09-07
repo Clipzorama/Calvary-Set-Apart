@@ -36,7 +36,7 @@ export const FAQ = () => {
                 {q}
               </h3>
 
-              <p className="mt-3 font-poppins text-sm leading-6 text-foreground/90">
+              <p className="mt-3 font-poppins text-[12px] md:text-sm leading-6 text-foreground/90">
                 {a}
               </p>
 

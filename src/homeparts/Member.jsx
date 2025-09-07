@@ -2,7 +2,7 @@
 import s1 from "@/scripture/s1.webp";
 import s2 from "@/scripture/s2.webp";
 import s3 from "@/scripture/s3.webp";
-import s4 from "@/scripture/s4.jpg";
+import s4 from "@/scripture/s4.webp";
 import s5 from "@/scripture/s5.webp";
 import s6 from "@/scripture/s6.webp";
 
@@ -66,11 +66,11 @@ export const Member = () => {
                         <li key={m.id} className="h-full">
                         <article className="h-full rounded-2xl border bg-background p-6 shadow-sm transition-shadow hover:shadow-md">
                             {/* Image */}
-                            <div className="w-full overflow-hidden rounded-xl aspect-[5/6] md:aspect-[3/4] max-w-[320px] mx-auto">
+                            <div className="relative w-full mx-auto max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[350px] sm:h-[300px] md:h-[350px] xl:h-[400px] overflow-hidden rounded-xl aspect-[3/4] md:aspect-[3/4] ">
                             <img
                                 src={m.img}
                                 alt={m.scriptureRef}
-                                className="h-full w-full object-cover"
+                                className="h-full w-full object-cover object-top"
                                 loading="lazy"/>
                             </div>
 
