@@ -69,7 +69,7 @@ export const Contact = () => {
                         <button
                         onClick={() => setIsOpen(false)}
                         className="absolute top-4 right-4 text-primary hover:text-primary/70">
-                        <X size={24} />
+                        <X size={24} className="cursor-pointer" />
                         </button>
 
                         <form onSubmit={handleSubmit}>
