@@ -1,43 +1,34 @@
+// App.jsx
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-import Home from "@/pages/Home";
-import { About } from "@/pages/About";
-import { GetInvolved } from "@/pages/GetInvolved";
-import { Explore } from "@/pages/Explore";
-import { NotFound } from "@/pages/NotFound";
 import { NavBar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { Toaster } from "@/popup/toaster";
-import Particles  from "@/Effects/Particles";
+import * as React from "react";
 
-
-
+const Home = React.lazy(() => import('@/pages/Home'));
+const About = React.lazy(() => import('@/pages/About'));
+const GetInvolved = React.lazy(() => import('@/pages/GetInvolved'));
+const Explore = React.lazy(() => import('@/pages/Explore'));
+const NotFound = React.lazy(() => import('@/pages/NotFound'));
 
 export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-background overflow-x-hidden">
-        <Particles
-          particleColors={['#717798', '#717798']}
-          particleCount={700}
-          particleSpread={10}
-          speed={0.1}
-          particleBaseSize={35}
-          moveParticlesOnHover={true}
-          alphaParticles={false}
-          disableRotation={false}
-        />
         <NavBar />
+        <React.Suspense fallback={null}>
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route index element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/get-involved" element={<GetInvolved />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
-        <Footer />
+        </React.Suspense>
         <Toaster />
       </div>
+      <Footer />
+
     </BrowserRouter>
   );
 }
