@@ -36,7 +36,7 @@ function FeatureCard({ title, desc, anim }) {
     <div className="text-center">
       {/* Animated Icon */}
       <div className="mx-auto mb-4 h-16 w-16">
-        <Lottie animationData={anim} loop={true} />
+        <Lottie animationData={anim} loop={false} />
       </div>
       <h3 className="font-quint text-lg sm:text-xl font-semibold">{title}</h3>
       <p className="mt-2 font-poppins text-sm sm:text-base text-foreground/70">{desc}</p>

@@ -35,7 +35,7 @@ export const AboutTop = () => {
                         More than a gathering, we are a family of believers walking in faith and love.
                         No matter where you are on your spiritual journey, you will find encouragement and belonging here.
                     </p>
-                    <Lottie animationData={heart} loop={true} className="w-24 h-24 md:w-40 md:h-40 opacity-0 animate-fade-in-delay-5" />
+                    <Lottie animationData={heart} loop={false} className="w-24 h-24 md:w-40 md:h-40 opacity-0 animate-fade-in-delay-5" />
                 </div>
             </div>
 
