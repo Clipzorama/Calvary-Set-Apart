@@ -1,8 +1,8 @@
-import pastor from "@/assets/event.webp";
+import pastor from "@/assets/pastor.webp";
 
 export const Leader = () => {
   return (
-    <section id="leadership" className="pb-16 md:pb-24 lg:pb-[12rem]">
+    <section id="leadership" className="pb-16 md:pb-24 lg:py-[10rem]">
         <div className="mx-auto w-full max-w-6xl px-4">
             <div className="flex flex-col-reverse lg:flex-row lg:items-start lg:gap-20">
                 {/* IMAGE */}
@@ -11,7 +11,7 @@ export const Leader = () => {
                     <img
                         src={pastor}
                         alt="Leadership"
-                        className="absolute inset-0 h-full w-full object-cover"
+                        className="absolute inset-0 h-full w-full object-cover object-top"
                     />
                     </div>
                 </div>

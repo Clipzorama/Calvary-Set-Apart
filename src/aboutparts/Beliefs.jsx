@@ -36,7 +36,7 @@ function FeatureCard({ title, desc, anim }) {
     <div className="text-center">
       {/* Animated Icon */}
       <div className="mx-auto mb-4 h-16 w-16">
-        <Lottie animationData={anim} loop={false} />
+        <Lottie animationData={anim} loop={true} />
       </div>
       <h3 className="font-quint text-lg sm:text-xl font-semibold">{title}</h3>
       <p className="mt-2 font-poppins text-sm sm:text-base text-foreground/70">{desc}</p>
@@ -46,7 +46,7 @@ function FeatureCard({ title, desc, anim }) {
 
 export const Beliefs = () => {
   return (
-    <section id="beliefs" className="w-full bg-background px-4 pb-40">
+    <section id="beliefs" className="w-full bg-background px-4 py-40">
         <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
         {/* Top Portion  */}
             <div className="text-center">
