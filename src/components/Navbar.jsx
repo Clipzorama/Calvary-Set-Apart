@@ -38,14 +38,14 @@ export const NavBar = () => {
         <nav className="fixed inset-x-0 top-0 bg-background/20 backdrop-blur-md z-[100] font-poppins border-b">
             <div className="container flex items-center justify-between py-6">
                 {/* Logo */}
-                <Link to="/" className="flex items-center gap-2">
+                <Link to="/#hero" className="flex items-center gap-2">
                     <img src={CLogo} alt="Church Logo" className="w-8 h-10" />
                     <span className="sr-only">Home</span>
                 </Link>
 
                 {/* Desktop Nav */}
                 <div className="hidden md:flex items-center gap-1">
-                    <NavLink to="/" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
+                    <NavLink to="/#hero" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Home
                     </NavLink>
                     <NavLink to="/about#about" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
@@ -95,7 +95,7 @@ export const NavBar = () => {
             {menuOpen && (
                 <div className="md:hidden border-t bg-background/95 backdrop-blur">
                     <div className="container py-6 flex flex-col">
-                        <NavLink to="/" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
+                        <NavLink to="/#hero" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Home
                         </NavLink>
                         <NavLink to="/about#about" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
