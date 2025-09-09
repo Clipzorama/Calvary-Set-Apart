@@ -32,12 +32,12 @@ export const Footer = () => {
           </nav>
 
           <div className="space-y-4 text-sm flex flex-col">
-            <a href="mailto:hello@naturecuresnaturally.com" className="inline-flex items-center gap-2 hover:text-primary transition-colors font-poppins">
-              <Mail size={16} /> TrueVineDm@gmail.com
-            </a>
-            <p className="inline-flex items-center font-poppins gap-2 text-muted-foreground">
-              <MapPin size={16} /> Prospect, CT 06712
-            </p>
+              <a href="mailto:hello@naturecuresnaturally.com" className="inline-flex items-center gap-2 hover:text-primary transition-colors font-poppins">
+                <Mail size={16} /> TrueVineDm@gmail.com
+              </a>
+              <p className="inline-flex items-center font-poppins gap-2 text-muted-foreground">
+                <MapPin size={16} /> 50 Waterbury Road, Suite 2A - Prospect, CT 06712
+              </p>
           </div>
         </div>
       </div>
