@@ -5,10 +5,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import CLogo from "@/assets/logo.webp";
 
 const services = [
-  { label: "- Worship Times", to: "/explore#worship" },
-  { label: "- Community Events", to: "/explore#events" },
-  { label: "- Youth Programs", to: "/explore#youth" },
-  { label: "- Prayer Requests", to: "/explore#prayer" },
+    { label: "- Youth Choir", to: "/explore#youth" },
+    { label: "- Shelter Programs", to: "/explore#shelter" },
+    { label: "- Baptism", to: "/explore#baptism" },
 ];
 
 export const NavBar = () => {
@@ -51,7 +50,7 @@ export const NavBar = () => {
                     <NavLink to="/about#about" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         About
                     </NavLink>
-                    <NavLink to="/get-involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
+                    <NavLink to="/get-involved#involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Get Involved
                     </NavLink>
                     <NavLink to="/explore" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
@@ -101,7 +100,7 @@ export const NavBar = () => {
                         <NavLink to="/about#about" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             About
                         </NavLink>
-                        <NavLink to="/get-involved" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
+                        <NavLink to="/get-involved#involved" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Get Involved
                         </NavLink>
                         <NavLink to="/explore" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
