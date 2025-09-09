@@ -122,7 +122,7 @@ const sections = [
                     </div>
                     <div className="rounded-xl border p-3">
                         <p className="font-semibold">Saturday</p>
-                        <p>6:00 AM — Morning Prayer</p>
+                        <p>7:00 AM — Morning Prayer</p>
                     </div>
                 </div>
             </div>
@@ -189,7 +189,7 @@ export const GetInvolved = () => {
                     aria-label="Previous"
                     disabled={idx === 0}
                     className={`absolute -left-3 md:-left-6 top-1/2 -translate-y-1/2 z-10 rounded-full border bg-background/90 p-2 shadow hover:shadow-md transition ${
-                    idx === 0 ? "opacity-30 cursor-not-allowed" : "opacity-100"
+                    idx === 0 ? "opacity-30 cursor-not-allowed" : "opacity-100 cursor-pointer"
                     }`}>
 
                     <ChevronLeft className="h-6 w-6 text-primary" />
@@ -202,7 +202,7 @@ export const GetInvolved = () => {
                     aria-label="Next"
                     disabled={idx === total - 1}
                     className={`absolute -right-3 md:-right-6 top-1/2 -translate-y-1/2 z-10 rounded-full border bg-background/90 p-2 shadow hover:shadow-md transition ${
-                    idx === total - 1 ? "opacity-30 cursor-not-allowed" : "opacity-100"
+                    idx === total - 1 ? "opacity-30 cursor-not-allowed" : "opacity-100 cursor-pointer"
                     }`}>
 
                     <ChevronRight className="h-6 w-6 text-primary" />
