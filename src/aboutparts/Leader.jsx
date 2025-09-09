@@ -3,7 +3,7 @@ import pastor from "@/assets/pastor.webp";
 export const Leader = () => {
   return (
     
-    <section id="about" className="pt-30 py-30">
+    <section id="about" className="pt-30 pb-30">
         <div className="flex flex-col items-center gap-5 border-b-primary">
             <h1 className="text-primary font-quint font-bold text-3xl md:text-5xl opacity-0 animate-fade-in-delay-1">About Our Church</h1>
             <p className="font-poppins text-center text-md opacity-0 animate-fade-in-delay-2">Join us as we share our journey of faith, community, and service in Christ.</p>
@@ -33,7 +33,7 @@ export const Leader = () => {
                     Pastor Orlando Mcdonald
                     </h2>
 
-                    <p className="mt-8 max-w-xl font-poppins text-sm sm:text-base text-foreground/80 text-justify opacity-0 animate-fade-in-delay-4">
+                    <p className="mt-4 max-w-xl mx-auto font-poppins text-sm sm:text-base text-foreground/80 text-center opacity-0 animate-fade-in-delay-4">
                         Our church&apos;s journey began at Calvary Church of God Incorporated in
                         Brooklyn, NY. In 2016, Pastor Orlando McDonald and his family moved to
                         Connecticut, where our church community was established about eight years ago.
