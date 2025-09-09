@@ -7,10 +7,10 @@ import { Journey } from "@/aboutparts/Journey"
 export const About = () => { 
     return (
         <>
-            <AboutTop />  
+            <Leader />
             <Who />
             <Beliefs />
-            <Leader />
+            <AboutTop />  
             <Journey />
         </>
 
