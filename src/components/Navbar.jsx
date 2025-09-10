@@ -53,7 +53,7 @@ export const NavBar = () => {
                     <NavLink to="/get-involved#involved" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Get Involved
                     </NavLink>
-                    <NavLink to="/explore" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
+                    <NavLink to="/explore#explore" className={({ isActive }) => `${baseLink} ${isActive ? active : ""}`}>
                         Explore
                     </NavLink>
 
@@ -103,7 +103,7 @@ export const NavBar = () => {
                         <NavLink to="/get-involved#involved" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Get Involved
                         </NavLink>
-                        <NavLink to="/explore" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
+                        <NavLink to="/explore#explore" onClick={() => setMenuOpen(false)} className={({ isActive }) => `px-2 py-2 rounded-md ${isActive ? active : ""}`}>
                             Explore
                         </NavLink>
                         
