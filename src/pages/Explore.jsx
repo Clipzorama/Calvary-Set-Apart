@@ -24,21 +24,22 @@ export const Explore = () => {
       <div className="mx-auto w-full max-w-5xl">
         {/* Heading */}
         <header className="text-center">
-          <h1 className="font-quint text-3xl md:text-4xl font-semibold text-primary">Explore</h1>
-          <p className="mt-2 font-poppins text-sm md:text-base text-foreground/80">
+          <h1 className="font-quint text-3xl md:text-4xl font-semibold text-primary opacity-0 animate-fade-in-delay-1">Explore</h1>
+          <p className="mt-2 font-poppins text-sm md:text-base text-foreground/80 opacity-0 animate-fade-in-delay-2">
             A quick look at Baptism, Youth Choir, and our Shelter Ministry.
           </p>
         </header>
 
         {/* Baptism Section */}
-        <section className="mt-10">
+        <section id="baptism" className="mt-10">
           <div className="flex items-end justify-between">
             <h2 className="font-quint text-2xl md:text-3xl font-semibold">Baptism</h2>
             <span className="font-poppins text-xs md:text-sm text-foreground/60">2 photos</span>
           </div>
           <p className="mt-4 font-poppins text-sm md:text-[15px] text-foreground/80 text-justify">
             Then cometh Jesus from Galilee to Jordan unto John, to be baptized of him. But John forbad him, saying, I have need to be baptized of thee, and comest thou to me? And Jesus answering said unto him, Suffer it to be so now: 
-            for thus it becometh us to fulfil all righteousness. Then he suffered him. And Jesus, when he was baptized, went up straightway out of the water: and, lo, the heavens were opened unto him, and he saw the Spirit of God descending like a dove, and lighting upon him: and lo a voice from heaven, saying, This is my beloved Son, in whom I am well pleased.
+            for thus it becometh us to fulfil all righteousness. Then he suffered him. And Jesus, when he was baptized, went up straightway out of the water: and, lo, the heavens were opened unto him, 
+            and he saw the Spirit of God descending like a dove, and lighting upon him: and lo a voice from heaven, saying, This is my beloved Son, in whom I am well pleased. (Matthew 3:13-17 KJV)
           </p>
 
           <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
@@ -67,7 +68,7 @@ export const Explore = () => {
         </section>
 
         {/* Youth Choir Section */}
-        <section className="mt-20">
+        <section id="youth" className="mt-20">
           <h2 className="font-quint text-2xl md:text-3xl font-semibold">Youth Choir</h2>
           <p className="mt-4 font-poppins text-sm md:text-[15px] text-foreground/80">
             The Youth Choir performs exclusively inside our church. Practices and programs are scheduled on 5th Sundays and during our yearly convention. 
@@ -78,7 +79,7 @@ export const Explore = () => {
             variants={reveal}
             initial="hidden"
             whileInView="show"
-            className="mt-4 relative flex justify-start"
+            className="mt-4 relative flex justify-center"
           >
             <img
             src={choirImg}
@@ -94,8 +95,8 @@ export const Explore = () => {
         </section>
 
         {/* Shelter Section*/}
-        <section>
-          <h2 className="mt-20 font-quint text-2xl md:text-3xl font-semibold">Shelter Ministry</h2>
+        <section id="shelter" className="mt-20">
+          <h2 className="font-quint text-2xl md:text-3xl font-semibold">Shelter Ministry</h2>
           <motion.div
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0, transition: { duration: 0.45 } }}
