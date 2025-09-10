@@ -20,16 +20,18 @@ const reveal = {
 
 export const Explore = () => {
   return (
-    <section id="explore" className="w-full px-4 py-30">
-      <div className="mx-auto w-full max-w-5xl">
+    <section id="explore" className="w-full py-30">
+      
         {/* Heading */}
         <header className="text-center">
           <h1 className="font-quint text-3xl md:text-4xl font-semibold text-primary opacity-0 animate-fade-in-delay-1">Explore</h1>
-          <p className="mt-2 font-poppins text-sm md:text-base text-foreground/80 opacity-0 animate-fade-in-delay-2">
-            A quick look at Baptism, Youth Choir, and our Shelter Ministry.
+          <p className="mt-5 px-4 font-poppins text-sm md:text-base text-center text-foreground/80 opacity-0 animate-fade-in-delay-2">
+            A quick look at Baptism, Youth Choir, and our Shelter Ministry
           </p>
         </header>
+        <div className="mt-4 h-[1px] w-full bg-primary rounded opacity-0 animate-fade-in-delay-2"></div>
 
+      <div className="mx-auto w-full max-w-5xl px-4">
         {/* Baptism Section */}
         <section id="baptism" className="mt-10">
           <div className="flex items-end justify-between">
