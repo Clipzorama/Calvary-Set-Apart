@@ -84,7 +84,7 @@ export const Beliefs = () => {
                     <FeatureCard {...FEATURES[2]} />
                 </div>
 
-                <div className="order-none self-center max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[200px] sm:h-[300px] md:h-[350px] xl:h-[400px]">
+                <div className="order-none self-center max-w-2xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[200px] sm:h-[300px] md:h-[350px] xl:h-[600px]">
                     <img
                     src={beliefsImg}
                     alt="Core beliefs"
