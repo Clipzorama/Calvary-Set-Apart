@@ -5,9 +5,9 @@ import { Menu, X, ChevronDown } from "lucide-react";
 import CLogo from "@/assets/logo.webp";
 
 const services = [
+    { label: "- Baptism", to: "/explore#baptism" },
     { label: "- Youth Choir", to: "/explore#youth" },
     { label: "- Shelter Programs", to: "/explore#shelter" },
-    { label: "- Baptism", to: "/explore#baptism" },
 ];
 
 export const NavBar = () => {
