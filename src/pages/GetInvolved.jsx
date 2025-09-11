@@ -171,7 +171,7 @@ export const GetInvolved = () => {
     const swipePower = (offset, velocity) => Math.abs(offset) * velocity;
 
     return (
-        <section id="involved" className="w-full px-4 relative min-h-screen pt-30 pb-14 flex flex-col items-center">
+        <section id="involved" className="w-full px-4 relative min-h-screen bg-background pt-30 pb-14 flex flex-col items-center">
             {/* Hero */}
             <div className="max-w-5xl w-full text-center mb-8">
                 <h1 className="font-quint font-semibold text-3xl md:text-4xl xl:text-5xl tracking-normal leading-tight text-primary opacity-0 animate-fade-in-delay-1">

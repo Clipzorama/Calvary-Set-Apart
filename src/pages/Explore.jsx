@@ -20,7 +20,7 @@ const reveal = {
 
 export const Explore = () => {
   return (
-    <section id="explore" className="w-full py-30">
+    <section id="explore" className="w-full py-30 bg-background">
       
         {/* Heading */}
         <header className="text-center">
@@ -33,7 +33,7 @@ export const Explore = () => {
 
       <div className="mx-auto w-full max-w-5xl px-4">
         {/* Baptism Section */}
-        <section id="baptism" className="mt-10">
+        <section id="baptism" className="py-30">
           <div className="flex items-end justify-between">
             <h2 className="font-quint text-2xl md:text-3xl font-semibold">Baptism</h2>
             <span className="font-poppins text-xs md:text-sm text-foreground/60">2 photos</span>
@@ -70,9 +70,9 @@ export const Explore = () => {
         </section>
 
         {/* Youth Choir Section */}
-        <section id="youth" className="mt-20">
+        <section id="youth" className="py-30">
           <h2 className="font-quint text-2xl md:text-3xl font-semibold">Youth Choir</h2>
-          <p className="mt-4 font-poppins text-sm md:text-[15px] text-foreground/80">
+          <p className="mt-4 font-poppins text-sm md:text-[15px] text-foreground/80 text-justify">
             The Youth Choir performs exclusively inside our church. Practices and programs are scheduled on 5th Sundays and during our yearly convention. 
             The choir gives young people an opportunity to grow, serve, and share their gifts with the congregation.
           </p>

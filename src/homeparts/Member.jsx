@@ -51,7 +51,7 @@ export const Member = () => {
 
 
     return (
-        <section id="members" className="py-16 md:py-24 lg:py-30">
+        <section id="members" className="py-16 md:py-24 lg:py-30 bg-background">
             <div className="mx-auto w-full max-w-6xl px-6 sm:px-20 md:px-6 lg:px-12 2xl:px-8">
                 <h2 className="text-center font-quint text-3xl md:text-4xl lg:text-5xl font-semibold tracking-normal leading-tight">
                     Our Members!
