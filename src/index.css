@@ -28,6 +28,8 @@
     --animate-fade-in-delay-6: fade-in 0.7s ease-out 1.2s forwards;
     --animate-fade-in-delay-7: fade-in 0.7s ease-out 1.4s forwards;
 
+    --animate-orbit: orbit 12s linear infinite;
+
 
 
 }
@@ -51,6 +53,8 @@
         --animate-fade-in-delay-6: fade-in 0.7s ease-out 1.2s forwards;
         --animate-fade-in-delay-7: fade-in 0.7s ease-out 1.4s forwards;
 
+        --animate-orbit: orbit 12s linear infinite;
+
 
 
     }
@@ -71,6 +75,11 @@ html {
             opacity: 1;
             transform: translateY(0);
         }
+    }
+
+    @keyframes orbit {
+        0%   { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+        100% { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
     }
     .container {
         margin-inline: auto;
