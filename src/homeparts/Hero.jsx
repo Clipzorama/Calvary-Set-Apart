@@ -20,7 +20,7 @@ export const HeroPage = () => {
             </svg>
             <svg
             aria-hidden
-            className="absolute top-22 md:top-30 left-8 w-24 h-24 opacity-0 animate-fade-in-delay-6 text-button z-20"
+            className="absolute top-26 md:top-30 left-8 w-18 h-18 md:w-24 md:h-24 opacity-0 animate-fade-in-delay-6 text-button z-20"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -32,7 +32,7 @@ export const HeroPage = () => {
 
             <svg
             aria-hidden
-            className="absolute bottom-8 right-8 w-28 h-28 opacity-0 animate-fade-in-delay-6 text-button rotate-12 z-20"
+            className="absolute bottom-20 md:bottom-8 right-8 w-22 h-22 md:w-28 md:h-28 opacity-0 animate-fade-in-delay-6 text-button rotate-12 z-20"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
@@ -44,7 +44,7 @@ export const HeroPage = () => {
                         
 
             <div className="mx-auto text-center z-10 relative max-w-5xl">
-                <h1 className="font-quint font-semibold text-3xl md:text-4xl xl:text-5xl leading-tight md:leading-normal tracking-normal text-primary mb-6 opacity-0 animate-fade-in-delay-1">
+                <h1 className="font-quint font-bold text-2xl md:text-4xl xl:text-5xl leading-tight md:leading-normal tracking-normal text-primary mb-6 opacity-0 animate-fade-in-delay-1">
                     Welcome to Calvary Set Apart <br /> Deliverance Ministry
                 </h1>
 
@@ -70,7 +70,7 @@ export const HeroPage = () => {
                 </div>
             </div>
 
-            <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in-delay-5">
+            <div className="absolute bottom-20 md:bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center opacity-0 animate-fade-in-delay-6">
                 <span className="animate-bounce">Scroll Down</span>
                 <ArrowDown className="h-5 w-5 text-button animate-bounce" />
             </div>
