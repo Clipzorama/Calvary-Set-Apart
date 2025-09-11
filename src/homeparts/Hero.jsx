@@ -1,5 +1,6 @@
 import { ArrowDown } from "lucide-react";
 import heroImg from "@/assets/church.webp";
+import doverImg from "@/assets/dover.png"
 
 export const HeroPage = () => {
 
@@ -9,7 +10,7 @@ export const HeroPage = () => {
             {/* Cross Pattern Background */}
             <svg
             aria-hidden
-            className="absolute inset-0 w-full h-full z-20 opacity-[0.14] text-[var(--color-button)]"
+            className="absolute inset-0 w-full h-full z-20 opacity-[0.14] text-button"
             >
             <defs>
                 <pattern id="crossPattern" width="32" height="32" patternUnits="userSpaceOnUse">
@@ -18,31 +19,19 @@ export const HeroPage = () => {
             </defs>
             <rect width="100%" height="100%" fill="url(#crossPattern)" />
             </svg>
-            <svg
-            aria-hidden
-            className="absolute top-26 md:top-30 left-8 w-18 h-18 md:w-24 md:h-24 opacity-0 animate-fade-in-delay-6 text-button z-20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            >
-            <path d="M2 12c4 0 6-2 10-2s6 2 10 2c-4 2-6 4-10 4s-6-2-10-4z" />
-            <path d="M12 2c1.5 2 2 3 2 5s-.5 3-2 5-2-1-2-5 1-3 2-5z" />
-            </svg>
 
-            <svg
-            aria-hidden
-            className="absolute bottom-20 md:bottom-8 right-8 w-22 h-22 md:w-28 md:h-28 opacity-0 animate-fade-in-delay-6 text-button rotate-12 z-20"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="1.5"
-            >
-            <path d="M2 12c4 0 6-2 10-2s6 2 10 2c-4 2-6 4-10 4s-6-2-10-4z" />
-            <path d="M12 2c1.5 2 2 3 2 5s-.5 3-2 5-2-1-2-5 1-3 2-5z" />
-            </svg>
-                        
+            <img
+            src={doverImg}
+            alt="Dove"
+            className="absolute top-26 md:top-30 left-8 w-18 h-18 md:w-24 md:h-24 opacity-0 animate-fade-in-delay-6 z-20"
+            />
 
+            <img
+            src={doverImg}
+            alt="Dove"
+            className="absolute bottom-20 md:bottom-8 right-8 w-22 h-22 md:w-28 md:h-28 opacity-0 animate-fade-in-delay-6 scale-x-[-1] z-20"
+            />
+                            
             <div className="mx-auto text-center z-10 relative max-w-5xl">
                 <h1 className="font-quint font-bold text-2xl md:text-4xl xl:text-5xl leading-tight md:leading-normal tracking-normal text-primary mb-6 opacity-0 animate-fade-in-delay-1">
                     Welcome to Calvary Set Apart <br /> Deliverance Ministry
