@@ -25,10 +25,10 @@ export const Footer = () => {
           </div>
 
           <nav className="grid grid-cols-2 gap-2 text-sm">
-            <Link to="/" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">Home</Link>
-            <Link to="/about" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">About</Link>
-            <Link to="/get-involved" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">Get Involved</Link>
-            <Link to="/explore" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">Explore</Link>
+            <Link to="/#hero" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">Home</Link>
+            <Link to="/about#about" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">About</Link>
+            <Link to="/get-involved#involved" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">Get Involved</Link>
+            <Link to="/explore#explore" className="text-buttonh hover:text-button/80 transition-colors duration-300 font-semibold font-poppins">Explore</Link>
           </nav>
 
           <div className="space-y-4 text-sm flex flex-col">
