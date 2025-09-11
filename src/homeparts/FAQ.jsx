@@ -12,7 +12,7 @@ export const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="py-16 md:py-24 lg:py-30">
+    <section id="faq" className="py-16 md:py-24 lg:py-30 bg-background2">
       <div className="mx-auto w-full max-w-6xl px-6 sm:px-16 md:px-20 lg:px-12 2xl:px-[1rem]">
         <h2 className="text-center font-quint text-3xl md:text-4xl xl:text-5xl font-semibold tracking-normal leading-tight">
           FAQS

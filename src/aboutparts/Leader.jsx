@@ -3,7 +3,7 @@ import pastor from "@/assets/pastor.webp";
 export const Leader = () => {
   return (
     
-    <section id="about" className="pt-30 pb-30">
+    <section id="about" className="pt-30 pb-30 bg-background">
         <div className="flex flex-col items-center gap-5 border-b-primary">
             <h1 className="text-primary font-quint font-bold text-3xl md:text-5xl opacity-0 animate-fade-in-delay-1">About Our Church</h1>
             <p className="font-poppins text-center text-md opacity-0 animate-fade-in-delay-2">Join us as we share our journey of faith, community, and service in Christ.</p>

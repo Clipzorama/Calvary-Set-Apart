@@ -28,7 +28,7 @@ const MILESTONES = [
 
 export const Journey = () => {
   return (
-    <section id="journey" className="py-16 md:py-24 lg:py-[7.5rem]">
+    <section id="journey" className="py-16 md:py-24 lg:py-[7.5rem] bg-background">
       <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-34">
           {/* Left: Heading / Intro */}

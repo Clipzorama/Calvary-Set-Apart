@@ -46,7 +46,7 @@ function FeatureCard({ title, desc, anim }) {
 
 export const Beliefs = () => {
   return (
-    <section id="beliefs" className="w-full bg-background px-4 py-40">
+    <section id="beliefs" className="w-full bg-background px-4 pt-25">
         <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem]">
         {/* Top Portion  */}
             <div className="text-center">

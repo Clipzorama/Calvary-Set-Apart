@@ -6,9 +6,9 @@ import heart from "@/icons/heart.json";
 export const AboutTop = () => { 
     
     return (
-        <section id="leadership" className="w-full px-4 relative pb-20 ">
+        <section id="leadership" className="w-full px-4 relative pb-30 bg-background2">
             
-            <div className="mx-auto w-full max-w-6xl md:mt-24 grid md:grid-cols-2 items-center gap-8 md:gap-12">
+            <div className="mx-auto w-full max-w-6xl md:pt-30 grid md:grid-cols-2 items-center gap-8 md:gap-12">
                 {/* Left */}
                 <div className="order-2 md:order-1 container">
                     <div className="w-full relative aspect-square h-[350px] md:h-[420px] lg:h-[440px] bg-muted/40 overflow-hidden rounded-2xl ">

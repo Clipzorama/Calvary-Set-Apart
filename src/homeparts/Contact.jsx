@@ -46,7 +46,7 @@ export const Contact = () => {
     }, [isOpen]);
 
   return (
-    <section id="contact" className="py-16 md:py-24 lg:py-[7.5rem]">
+    <section id="contact" className="py-16 md:py-24 lg:py-[7.5rem] bg-background2">
         <div className="mx-auto w-full max-w-6xl px-6 md:px-12 2xl:px-[1rem] flex flex-col items-center">
             <h2 className="text-center font-quint text-3xl md:text-4xl xl:text-5xl font-semibold tracking-normal leading-tight">
                 Contact Us
