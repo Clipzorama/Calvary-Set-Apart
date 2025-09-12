@@ -221,7 +221,7 @@ export const GetInvolved = () => {
                 </div>
 
                 {/* Content Container */}
-                <div className="relative overflow-hidden h-[62vh] md:h-[56vh] lg:h-[52vh] max-h-[700px] opacity-0 animate-fade-in-delay-4">
+                <div className="relative overflow-hidden h-[58vh] md:h-[56vh] lg:h-[52vh] max-h-[700px] opacity-0 animate-fade-in-delay-4">
                     <AnimatePresence initial={false} custom={dir} mode="wait">
                         <motion.article
                             key={idx}
