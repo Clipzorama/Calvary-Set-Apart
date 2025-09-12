@@ -21,7 +21,7 @@ export const AboutTop = () => {
                 </div>
 
                 {/* Right */}
-                <div className="order-1 md:order-2 flex flex-col items-center">
+                <div className="pt-30 md:pt0 order-1 md:order-2 flex flex-col items-center">
                     <h2 className="font-quint font-semibold text-3xl md:text-5xl leading-tight text-center">
                         Where Hearts Come Together
                     </h2>
