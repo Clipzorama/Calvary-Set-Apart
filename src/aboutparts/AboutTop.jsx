@@ -1,19 +1,31 @@
 import Lottie from "lottie-react";
 import ap from "@/assets/assistantp.webp";
 import heart from "@/icons/heart.json";
+import couple from "@/assets/couple.webp"
+import { useState, useEffect } from "react";
 
+const images = [ap, couple]
 
 export const AboutTop = () => { 
+    const [currentImage, setCurrentImage] = useState(images[0]);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+        }, 5000);
+
+        return () => clearInterval(intervalId);
+    }, []);
     
     return (
         <section id="leadership" className="w-full px-4 relative pb-30 bg-background2">
             
-            <div className="mx-auto w-full max-w-6xl md:pt-30 grid md:grid-cols-2 items-center gap-8 md:gap-12">
+            <div className="mx-auto w-full max-w-6xl md:pt-30 grid md:grid-cols-2 items-center gap-8 md:gap-25">
                 {/* Left */}
-                <div className="order-2 md:order-1 container">
-                    <div className="w-full relative aspect-square h-[350px] md:h-[420px] lg:h-[440px] bg-muted/40 overflow-hidden rounded-2xl ">
+                <div className="order-2 md:order-1">
+                    <div className="w-full relative aspect-square h-[350px] md:h-[420px] lg:h-[540px] bg-muted/40 overflow-hidden rounded-2xl ">
                         <img
-                        src={ap}
+                        src={currentImage}
                         alt="Church community"
                         className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
                         />
