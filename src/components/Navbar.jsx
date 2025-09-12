@@ -37,7 +37,7 @@ export const NavBar = () => {
         <nav className="fixed inset-x-0 top-0 bg-background/20 backdrop-blur-md z-[100] font-poppins border-b">
             <div className="container flex items-center justify-between py-6">
                 {/* Logo */}
-                <Link to="/#hero" className="flex items-center gap-2">
+                <Link onClick={() => setMenuOpen(false)} to="/#hero" className="flex items-center gap-2">
                     <img src={CLogo} alt="Church Logo" className="w-8 h-10" />
                     <span className="sr-only">Home</span>
                 </Link>
