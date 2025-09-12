@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 const images = [ap, couple]
 
 export const AboutTop = () => { 
-    const [currentImage, setCurrentImage] = useState(images[0]);
+    const [currentImage, setCurrentImage] = useState(0);
 
     useEffect(() => {
         const intervalId = setInterval(() => {
@@ -25,7 +25,7 @@ export const AboutTop = () => {
                 <div className="order-2 md:order-1">
                     <div className="w-full relative aspect-square h-[350px] md:h-[420px] lg:h-[540px] bg-muted/40 overflow-hidden rounded-2xl ">
                         <img
-                        src={currentImage}
+                        src={images[currentImage]}
                         alt="Church community"
                         className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
                         />
