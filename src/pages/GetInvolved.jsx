@@ -283,7 +283,7 @@ export const GetInvolved = () => {
                     download
                     className="inline-flex opacity-0 animate-fade-in-delay-4 items-center gap-2 rounded-2xl bg-button hover:bg-buttonh text-background px-4 py-2 font-poppins text-sm md:text-base transition-colors"
                 >
-                    <FileDown className="h-4 w-4" />
+                    <FileDown className="h-4 w-4 cursor-pointer" />
                     Download Constitution (PDF)
                 </a>
             </div>
