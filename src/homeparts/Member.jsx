@@ -5,6 +5,9 @@ import s3 from "@/scripture/s3.webp";
 import s4 from "@/scripture/s4.webp";
 import s5 from "@/scripture/s5.webp";
 import s6 from "@/scripture/s6.webp";
+import s7 from "@/scripture/s7.webp";
+import s8 from "@/scripture/s8.webp";
+
 
 
 export const Member = () => {
@@ -46,27 +49,39 @@ export const Member = () => {
         scriptureRef: "Psalm 91 1-16",
         scriptureText: "For he will command his angels concerning you to guard you in all your ways.",
         },
+        {
+        id: 7,
+        img: s7,
+        scriptureRef: "Psalm 23",
+        scriptureText: "Surely goodness and mercy shall follow me all the days of my life: and I will dwell in the house of the LORD for ever.",
+        },
+        {
+        id: 8,
+        img: s8,
+        scriptureRef: "Psalm 103 ",
+        scriptureText: "Bless the LORD, all his works in all places of his dominion: bless the LORD, O my soul.",
+        },
     ];
 
 
 
     return (
         <section id="members" className="py-16 md:py-24 lg:py-30 bg-background">
-            <div className="mx-auto w-full max-w-6xl px-6 sm:px-20 md:px-6 lg:px-12 2xl:px-8">
-                <h2 className="text-center font-quint text-3xl md:text-4xl lg:text-5xl font-semibold tracking-normal leading-tight">
+            <div className="flex flex-col items-center">
+                <h2 className="text-center w-full max-w-6xl px-6 sm:px-20 md:px-6 lg:px-12 2xl:px-8text-center font-quint text-3xl md:text-4xl lg:text-5xl font-semibold tracking-normal leading-tight">
                     Our Members!
                 </h2>
-                <p className="mx-auto mt-3 max-w-3xl text-center font-poppins text-sm sm:text-base text-foreground/80">
+                <p className="mx-auto w-full px-6 sm:px-20 md:px-6 lg:px-12 2xl:px-8 mt-3 max-w-3xl text-center font-poppins text-sm sm:text-base text-foreground/80">
                     Meet some of the wonderful members of our ministry and the scripture that inspires them.
                 </p>
 
                 {/* Members grid */}
-                <ul className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-2 lg:grid-cols-3 relative z-20">
+                <ul className="mt-10 grid grid-cols-1 gap-8 md:mt-12 md:grid-cols-2 xl:grid-cols-4 relative z-20 px-10">
                     {members.map((m) => (
                         <li key={m.id} className="h-full">
                         <article className="h-full rounded-2xl border bg-background p-6 shadow-sm transition-shadow hover:shadow-md">
                             {/* Image */}
-                            <div className="relative w-full mx-auto max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-5xl h-[350px] sm:h-[300px] md:h-[350px] xl:h-[400px] overflow-hidden rounded-xl aspect-[3/4] md:aspect-[3/4] ">
+                            <div className="relative w-full mx-auto max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-4xl h-[350px] sm:h-[300px] md:h-[350px] lg:h-[400px] xl:h-[400px] overflow-hidden rounded-xl aspect-[3/4] md:aspect-[3/4] ">
                             <img
                                 src={m.img}
                                 alt={m.scriptureRef}
