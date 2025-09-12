@@ -6,11 +6,11 @@ export const HeroPage = () => {
 
 
     return (
-        <section id="hero" className="flex bg-background flex-col items-center justify-center w-full px-4 pb-30 relative min-h-screen pt-30">
+        <section id="hero" className="flex bg-background flex-col items-center justify-center w-full px-4 pb-30 relative min-h-screen pt-30 z-10">
             {/* Cross Pattern Background */}
             <svg
             aria-hidden
-            className="absolute inset-0 w-full h-full z-20 opacity-[0.14] text-button"
+            className="absolute inset-0 w-full h-full z-0 opacity-[0.14] text-button"
             >
             <defs>
                 <pattern id="crossPattern" width="32" height="32" patternUnits="userSpaceOnUse">
