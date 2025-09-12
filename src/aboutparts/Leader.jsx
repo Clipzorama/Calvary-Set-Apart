@@ -14,7 +14,7 @@ export const Leader = () => {
             <div className="flex flex-col-reverse lg:flex-row lg:items-start lg:gap-20">
                 {/* IMAGE */}
                 <div className="lg:w-1/2 self-center md:block">
-                    <div className="relative opacity-0 animate-fade-in-delay-3 w-full h-[350px] md:h-[350px] xl:h-[400px] aspect-[4/5] rounded-xl bg-muted/60 shadow-sm overflow-hidden">
+                    <div className="relative opacity-0 animate-fade-in-delay-3 w-full h-[350px] md:h-[350px] lg:h-[440px] aspect-[4/5] rounded-xl bg-muted/60 shadow-sm overflow-hidden">
                     <img
                         src={pastor}
                         alt="Leadership"
@@ -39,7 +39,7 @@ export const Leader = () => {
                         Connecticut, where our church community was established about eight years ago.
                     </p>
 
-                    <div className="mt-12 flex flex-col sm:flex-row sm:gap-8 opacity-0 animate-fade-in-delay-5">
+                    <div className="mt-12 flex flex-col sm:flex-row sm:gap-8 opacity-0 animate-fade-in-delay-5 px-5 md:px-15 lg:px-0">
                         <div className="sm:w-1/2">
                             <h3 className="font-poppins text-lg font-semibold">Our Father</h3>
                             <p className="mt-2 font-poppins text-sm sm:text-base text-foreground/80 text-justify">
