@@ -18,35 +18,22 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Node
-        uses: actions/setup-node@v4
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
-
-      # If your lockfile was created by a different npm version, npm ci can fail.
-      # This falls back to `npm install` if ci fails.
+          cache: npm
       - name: Install dependencies
-        run: |
-          npm ci || npm install
-
+        run: npm ci || npm install
       - name: Build
         run: |
           npm run build
-          # SPA fallback for BrowserRouter
           if [ -f "dist/index.html" ]; then cp dist/index.html dist/404.html; fi
-
-      - name: Configure Pages
-        uses: actions/configure-pages@v5
-
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
-          
+          path: dist
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -54,6 +41,5 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - id: deployment
         uses: actions/deploy-pages@v4
