@@ -30,8 +30,6 @@
 
     --animate-orbit: orbit 12s linear infinite;
 
-
-
 }
 
 
@@ -54,8 +52,6 @@
         --animate-fade-in-delay-7: fade-in 0.7s ease-out 1.4s forwards;
 
         --animate-orbit: orbit 12s linear infinite;
-
-
 
     }
 }

@@ -4,14 +4,19 @@ import heart from "@/icons/heart.json";
 import couple from "@/assets/couple.webp"
 import { useState, useEffect } from "react";
 
-const images = [ap, couple]
+const images = [ap, couple];
+const captions = ["Assistant Pastor Jennings and Evangelist Jennings", "Elder Denton and Mother Denton"];
 
 export const AboutTop = () => { 
     const [currentImage, setCurrentImage] = useState(0);
+    const [currentCaption, setCurrentCaption] = useState(0);
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setCurrentImage((prevIndex) => (prevIndex + 1) % images.length);
+            setCurrentCaption((prevIndex) => (prevIndex + 1) % captions.length);
+
         }, 5000);
 
         return () => clearInterval(intervalId);
@@ -29,6 +34,11 @@ export const AboutTop = () => {
                         alt="Church community"
                         className="absolute inset-0 w-full h-full object-cover object-top md:object-center"
                         />
+                        <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 p-3 text-center">
+                            <span className="inline-block rounded-full bg-background/70 px-3 py-1 text-xs font-poppins text-foreground/80 backdrop-blur">
+                                {captions[currentCaption]}
+                            </span>
+                        </figcaption>
                     </div>
                 </div>
 

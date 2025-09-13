@@ -6,13 +6,18 @@ import pastor3 from "@/assets/pastor3.webp";
 
 
 const images = [pastor, pastor2, pastor3];
+const captions = ["Pastor", "Pastor McDonald and Lady Marie McDonald", "Pastors Family"];
+
 
 export const Leader = () => {
     const [index, setIndex] = useState(0);
+    const [currentCaption, setCurrentCaption] = useState(0);
+
 
     useEffect(() => {
         const intervalId = setInterval(() => {
             setIndex((prevIndex) => (prevIndex + 1) % images.length);
+            setCurrentCaption((prevIndex) => (prevIndex + 1) % captions.length);
         }, 5000);
 
         return () => clearInterval(intervalId);
@@ -31,11 +36,17 @@ export const Leader = () => {
                     {/* IMAGE */}
                     <div className="lg:w-1/2 self-center md:block">
                         <div className="relative opacity-0 animate-fade-in-delay-3 w-full h-[350px] md:h-[350px] lg:h-[440px] aspect-[4/5] rounded-xl bg-muted/60 shadow-sm overflow-hidden">
-                        <img
-                            src={images[index]}
-                            alt="Leadership"
-                            className="absolute inset-0 h-full w-full object-cover object-top"
-                        />
+                            <img
+                                src={images[index]}
+                                alt="Leadership"
+                                className="absolute inset-0 h-full w-full object-cover object-top"
+                            />
+
+                            <figcaption className="pointer-events-none absolute inset-x-0 bottom-0 p-3 text-center">
+                                <span className="inline-block rounded-full bg-background/70 px-3 py-1 text-xs font-poppins text-foreground/80 backdrop-blur">
+                                    {captions[currentCaption]}
+                                </span>
+                            </figcaption>
                         </div>
                     </div>
 
@@ -57,9 +68,9 @@ export const Leader = () => {
 
                         <div className="mt-12 flex flex-col sm:flex-row sm:gap-8 opacity-0 animate-fade-in-delay-5 px-5 md:px-15 lg:px-0">
                             <div className="sm:w-1/2">
-                                <h3 className="font-poppins text-lg font-semibold">Our Father</h3>
+                                <h3 className="font-poppins text-lg font-semibold">Our Pastor</h3>
                                 <p className="mt-2 font-poppins text-sm sm:text-base text-foreground/80 text-justify">
-                                    Father McDonald has faithfully served since 2017, leading our
+                                    Pastor McDonald has faithfully served since 2017, leading our
                                     ministry in Waterbury.
                                 </p>
                             </div>

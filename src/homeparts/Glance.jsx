@@ -53,7 +53,7 @@ export const Glance = () => {
     return (
       <section id="glance" className="bg-background2 py-16 md:py-20 lg:py-30">
         <div className="px-10 md:px-20 lg:px-25 xl:px-30 2xl:px-45">
-          <div className="grid gap-10 md:gap-0 lg:grid-cols-2 items-center">
+          <div className="flex flex-col gap-10 justify-center items-center">
             {/* Left Side */}
             <div ref={leftRef} className="space-y-6 mb-10 lg:mb-0">
               <h2 className="text-3xl md:text-4xl xl:text-5xl font-semibold text-center font-quint tracking-normal leading-normal">
@@ -64,7 +64,7 @@ export const Glance = () => {
                 Our mission encompasses worship, teaching, deliverance, youth development, and impactful outreach.
               </p>
 
-              <div className="flex flex-col sm:flex-row gap-20 mb-8">
+              <div className="flex flex-col sm:flex-row gap-20 mb-8 lg:px-20 xl:px-60">
                 {items.map((it) => (
                   <div key={it.title} className="flex flex-col gap-3">
                     <div className="p-2">{it.icon}</div>
@@ -80,17 +80,6 @@ export const Glance = () => {
                   </div>
                   ))}
               </div>
-            </div>
-
-            <div className="relative mx-auto my-auto h-full w-full flex justify-center items-center">
-              <img 
-                src={crossImg} 
-                alt="Cross" 
-                className="h-80 w-80 md:h-90 md:w-90 lg:w-230 lg:h-120 xl:w-120 xl:h-120 
-                          text-foreground 
-                          lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:translate-x-[25%]
-                          animate-orbit md:animate-[orbit_6s_linear_infinite]" 
-              />
             </div>
           </div>
         </div>
