@@ -46,7 +46,7 @@ export const Member = () => {
         {
         id: 6,
         img: s6,
-        scriptureRef: "Psalm 91 1-16",
+        scriptureRef: "Psalm 91",
         scriptureText: "For he will command his angels concerning you to guard you in all your ways.",
         },
         {
